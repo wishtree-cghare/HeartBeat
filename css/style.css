@@ -1,0 +1,342 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Lato',sans-serif;
+}
+.main-heading {
+/* background-color: blueviolet; */
+ text-align: right;
+ padding: 10px 105px 10px 0;
+ color: #050605;
+ 
+}
+
+.main-heading h1{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.header-content{
+    /* background-color: red; */
+}
+
+.logo{
+    margin-top:-65px;
+    padding-left: 170px
+}
+
+.content-box-lg{
+    padding: 100px
+}
+
+.header-tabs ul li a,
+.contact{
+    text-decoration: none;
+    
+    
+ }
+
+.contact{
+    background-color: #22C6F9;
+    border-radius: 20px;
+    border: none;
+    
+ }
+
+ 
+ #footer{
+   position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: static;
+    z-index: 150;
+ }
+   
+
+
+ .footerImg ul{
+    list-style-type: none;
+     
+     
+
+ }
+
+ .footerImg ul li{
+     float: left;
+    display: inline;
+    padding: 20px 10px ;
+
+   
+
+    
+
+}
+.footer-list ul{
+    list-style-type: none;
+     
+     
+
+ }
+.copyright{
+    background: #f4f4f4;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+
+.nav ul li{
+    display: inline;
+}
+
+
+
+.content-box-lg{
+    padding: 90px 0;
+   
+}
+
+
+
+
+
+.home-part-01-img-text{
+    width: 50%;
+    position: relative;
+}
+
+.home-part-01-text{
+   
+position: absolute;
+top: 30%;
+left: 50%;
+color: #050605;
+transform: translate(-50%, -50%);
+}
+
+.home-part-01-text h2{
+    font-weight: 800;
+}
+
+.home-part-01-text p{
+    color: #050605;
+    
+}
+
+.home-part-01-text h5{
+
+}
+
+.home-part-01-text .BrandorAency{
+
+   
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #22C6F9;
+    color: #fff;
+    margin: 0 5px;
+
+}
+
+.home-part-01-text .AnInfluencer{
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #FC3990;
+    color: #fff;
+}
+
+.home-part-01-text h5{
+    padding: 15px 0;
+  
+}
+
+.home-part-02-text h2{
+    font-weight: 800;
+    
+}
+
+.home-part-02-text h3{
+    color: #050605;
+    opacity: 1;
+    
+}
+
+.home-part-02-text p{
+    padding: 0 320px;
+    font-size: 15px;
+}
+
+
+.home-part-02-container .part-01 h4{
+   
+   padding-left: 250px;
+   font-weight: 800;
+    
+  
+    
+}
+
+.home-part-02-container .part-02 h4{
+    
+   padding-right: 230px;
+   font-weight: 800;
+  
+
+}
+
+.home-part-02-container .part-01  h5{
+    
+   padding-left: 260px;
+    display: block;
+    /* font-size: 15px; */
+  padding-top:  4px;
+
+}
+
+.home-part-02-container .part-02  h5{
+    
+    padding-right: 230px;
+     display: block;
+     /* font-size: 15px; */
+  padding-top:  4px;
+
+ }
+
+ .home-part-02-container .part-01 p{
+     width: 50%; 
+     text-align: right;
+
+ }
+ .home-part-02-container .part-03 h3{
+    font-weight: 800;
+}
+ .home-part-02-container .part-03 p{
+     padding: 0 190px ;
+ }
+
+
+ .home-part-03-container-img-text{
+    
+    position: relative;
+}
+
+ .home-part-03-container-text
+ {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #050605;
+    transform: translate(-70%, -50%);
+    width: 70%;
+ } 
+
+
+
+ .home-part-03-container-text h3{
+
+    padding-top: 40px;
+    font-weight: 800;
+
+ }
+
+ .home-part-03-container-text p{
+
+    padding: 20px 0px;
+    width: 430px;
+    
+    
+
+ } 
+ 
+
+ .home-part-03-container-img-text img{
+     padding-left: 196px;
+   
+    
+             
+     
+ }
+
+
+ .HeartBeat-button{
+    
+     border: 1px solid #22C6F9;
+     border-radius: 8px;
+     background-color: #22C6F9;
+     color: #fff;
+     padding:10px 15px;
+     
+ }
+
+ .home-part-04-container-text  h3{
+     padding-left:10px;
+     padding-right: 150px;
+     font-weight: 800;
+ }
+
+ .home-part-04-container-text  p{
+    padding-left:10px;
+    padding-right: 40px;
+}
+
+
+.home-part-05-container h3 {
+    padding-top: 100px;
+    font-weight: 800;
+}
+
+.home-part-05-container p{
+    padding: 10px 90px 0 0;
+   
+}
+
+.home-part-05-container-01-img-text{
+    position: relative;
+}
+
+    .home-part-05-container-01-text
+    {
+       position: absolute;
+       top: 30%;
+       left: 50%;
+       color: #050605;
+       transform: translate(-70%, -50%);
+       width: 70%;
+    } 
+
+
+
+.home-part-05-container-01-img-text p{
+    
+    padding:0 80px;
+     margin-bottom: 30px
+    }
+
+
+.home-part-05-container-01-img-text-div1{
+    float: left;
+    width: 20%
+}
+
+.home-part-05-container-01-img-text-div2{
+    float: left;
+    width: 60%;
+    text-align: center;
+
+}
+
+.home-part-05-container-01-img-text-div3{
+    float: right;
+    width: 20%
+
+}
+
+.home-part-05-container-01-img-text-div1 img{
+padding-top: 88px
+}
+
