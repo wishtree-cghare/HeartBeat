@@ -29,6 +29,10 @@ body {
     padding: 100px
 }
 
+.content-box-md{
+    padding: 50px;
+}
+
 .header-tabs ul li a,
 .contact{
     text-decoration: none;
@@ -320,23 +324,131 @@ transform: translate(-50%, -50%);
 
 .home-part-05-container-01-img-text-div1{
     float: left;
-    width: 20%
+    width: 17.5%
 }
 
 .home-part-05-container-01-img-text-div2{
     float: left;
-    width: 60%;
+    width: 65%;
     text-align: center;
 
 }
 
+.home-part-05-container-01-img-text-div2 h3{
+    font-weight: 800;
+}
+
 .home-part-05-container-01-img-text-div3{
     float: right;
-    width: 20%
+    width: 17.5%
 
 }
 
 .home-part-05-container-01-img-text-div1 img{
 padding-top: 88px
 }
+.featured{
 
+    margin-top: 60px;
+    
+}
+
+.featured h3{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.home-part-05-container-01-img-text-div2 .img{
+
+    padding: 20px;
+
+}
+
+.Blog {
+    padding: 0 90px;
+    
+    
+}
+
+.Blog h3{
+    margin-top: -100px;
+}
+
+.Blog img{
+    margin-top: -60px;
+}
+
+.contactus-container{
+    position: relative;
+    top: 0;
+    /* left: 0;s */
+}
+
+.contactus-content{
+    position: absolute;
+    top: 60px;
+ 
+   
+}
+
+.contactUs-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .contactUs-container-content {
+    position: absolute;
+    bottom: 50px;
+    left: 90px;
+  }
+  
+
+  
+  .contactUs-container-content-form {
+    position: absolute;
+    top: 50px;
+  }
+
+
+  .contactUs-container-content-form{
+      width:90%;
+      height:100%;
+      background-color: #fff;
+      left:100%;
+      top:0
+  }
+  
+
+  .contactUs-container-content-form .col-md-12,
+  .contactUs-container-content-form .col-md-6,
+  .contactUs-container-content-form .col-md-3,
+  .contactUs-container-content-form .col-md-9
+
+    {
+      color: black;
+      text-align: left;
+  }
+
+  .contactUs-container-content-form h3{
+      font-weight: 800;
+  }
+
+  .contactUs-container-content-form h5{
+      font-weight: 700;
+      padding: 10px 0;
+  }
+
+  .contactUs-container-content-form  .contactUsButton{
+
+    font-weight: 700;
+    border: 1px solid #FC3990;
+    background-color: #FC3990;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 125px;
+   
+
+  }
+
+ 
