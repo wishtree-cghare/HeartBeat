@@ -1,0 +1,1019 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 113px;
+  }
+  .header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    background-color: pink;
+    height: 100px;
+    width: 133.83px;
+    left: 113px;
+    top: 90px;
+  }
+  .nav {
+    flex-grow: 1;
+    margin-left: 100px;
+  }
+  
+  h1 {
+    color: #050605;
+    opacity: 1;
+    font: normal normal bold 24px/29px Proxima Nova;
+  }
+  
+  
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact {
+    width: 97px;
+    height: 36px;
+  }
+  .contact a {
+    color: #fff;
+    background: #22c6f9;
+    padding: 8px 15px;
+    border-radius: 10px;
+  }
+  
+  /* ---------------------------------------------
+              Home
+  -----------------------------------------------*/
+  .home-content {
+    margin-top: 80px;
+    display: flex;
+  }
+  h2 {
+    color: #050605;
+    opacity: 1;
+    font-weight: 900;
+  }
+  p {
+    color: #050605;
+    opacity: 1;
+  }
+  
+  .home-content p {
+    top: 431px;
+    left: 113px;
+    width: 434px;
+    height: 82px;
+  }
+  
+  .areYou {
+    top: 543px;
+    left: 113px;
+    width: 90px;
+    height: 22px;
+    color: #050605;
+    opacity: 1;
+    text-transform: uppercase;
+    top: 543px;
+    left: 113px;
+    width: 90px;
+    height: 22px;
+    font-weight: 900;
+  }
+  .home-content .links {
+    display: flex;
+  }
+  .home-content a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .brand {
+    background: #22c6f9;
+    margin-right: 20px;
+  }
+  .home-part1 {
+    position: relative;
+  }
+  .home-part1-img {
+    position: absolute;
+    transform: translate(-50%, -10%);
+    z-index: -1;
+  }
+  
+  .brands-content {
+    text-align: center;
+  }
+  
+  .brands-content p {
+    padding-left: 277px;
+    padding-right: 277px;
+  }
+  .brands-img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .brands-img .img1,
+  .brands-img .img3 {
+    margin-top: 38px;
+  }
+  .brands-img .img2 {
+    margin-top: 83px;
+  }
+  
+  .content-below-ima {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content-below-ima .part1,
+  .content-below-ima .part2 {
+    flex: 0 0 calc(50% - 3rem);
+    text-align: center;
+    color: #050605;
+    opacity: 1;
+  }
+  
+  .content-below-ima .part1 h4 {
+    padding-left: 290px;
+    font-weight: 900;
+  }
+  .content-below-ima .part1 p {
+    padding-left: 276px;
+  }
+  
+  .content-below-ima .part2 h4 {
+    padding-right: 200px;
+    font-weight: 900;
+  }
+  .content-below-ima .part2 p {
+    padding-right: 276px;
+    padding-left: 16px;
+  }
+  .content-below-ima .part1 a {
+    display: block;
+    padding-left: 245px;
+  }
+  
+  .content-below-ima .part2 a {
+    display: block;
+    padding-right: 240px;
+  }
+  
+  .last-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+  .last-content p {
+    max-width: 728px;
+  }
+  
+  .last-content h3 {
+    font-weight: 800;
+  }
+  .discover-content {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .discover-img,
+  .discover-part2 {
+    flex: 0 0 calc(50% - 2rem);
+  }
+  
+  .discover-content h3 {
+    color: #050605;
+    opacity: 1;
+    font-weight: 800;
+    margin-bottom: 27px;
+  }
+  
+  .discover-content p {
+    width: 450px;
+  }
+  
+  .discover-btn {
+    background-color: #22c6f9;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .discover-btn a {
+    color: #fff;
+  }
+  
+  .discover-part2 {
+    position: relative;
+  }
+  .discover-back-img {
+    position: absolute;
+    z-index: -1;
+    left: 34%;
+    bottom: -10%;
+  }
+  
+  .best-brand-influencer-content {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .best-brand-influencer-content-part2 {
+    margin-left: 70px;
+  }
+  
+  .best-brand-influencer-content-part1-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .best-brand-influencer-content-part1-images .img1,
+  .best-brand-influencer-content-part1-images .img2,
+  .best-brand-influencer-content-part1-images .img3 {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+  
+  .best-brand-influencer-content-part1-images .img1 p,
+  .best-brand-influencer-content-part1-images .img2 p,
+  .best-brand-influencer-content-part1-images .img3 p {
+    width: 92px;
+    height: 36px;
+  }
+  
+  .best-brand-influencer-content-part1-images .img2 p {
+    width: 100px;
+    height: 36px;
+  }
+  
+  .best-brand-influencer-content-part1-images .img3 p {
+    width: 140px;
+    height: 36px;
+  }
+  
+  .best-brand-influencer-content-part1 h3 {
+    color: #050605;
+    opacity: 1;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  
+  .best-brand-influencer-content-part1 p {
+    margin-bottom: 33px;
+  }
+  
+  .best-brand-influencer-content-part2 img {
+      width: 545px;
+      height: 360px;
+    }
+  
+  .tiktok-content {
+    display: flex;
+    margin-top: 80px;
+  }
+  .tiktok-content .part1,
+  .tiktok-content .part2 {
+    flex: 0 0 calc(50% - 2rem);
+  }
+  
+  .tiktok-content .part2 h3 {
+    color: #050605;
+    opacity: 1;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  
+  .tiktok-content .part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .instagram {
+    margin-top: 80px;
+  }
+  
+  .instagram-title {
+    text-align: center;
+  }
+  .instagram-title p {
+    max-width: 674px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  
+  .insta-btn {
+    background: #22c6f9;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .insta-btn a {
+    color: #fff;
+  }
+  
+  .insta-featured {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .featured-contents {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .blog {
+    margin-top: 88px;
+    text-align: center;
+  }
+  .blog h4 {
+    color: #050605;
+    opacity: 1;
+    font-weight: 600;
+  }
+  .blog-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+  }
+  .blog1{
+  width: 360px;
+  height: 200px;background-color: #5BC9E0;border-radius: 10px;
+  }
+  
+  .blog2{
+      width: 360px;
+      height: 200px;background-color: #FEC00F;border-radius: 10px;
+      }
+  
+      .blog3{
+          width: 360px;
+          height: 200px;background-color: #18425B;border-radius: 10px;
+          }
+  .instagram-content {
+    position: relative;
+  }
+  
+  .Ellipse-34 {
+    position: absolute;
+    z-index: -1;
+    top: 12%;
+    left: -20%;
+  }
+  
+  .Ellipse-35 {
+    position: absolute;
+    z-index: -1;
+    top: 1%;
+    right: -9%;
+  }
+  
+  .contactus-data {
+    margin-top: 80px;
+    background: url('/img/Mask\ Group\ 5.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 467px;
+    display: flex;
+    padding: 50px 113px;
+  }
+  .contact-img {
+    background: url('/img/Mask\ Group\ 4.jpg');
+    width: 570px;
+    height: 365px;
+    margin-left: 20px;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    height: 365px;
+    padding-left: 20px;
+  }
+  .contact-img,
+  .contact-form {
+    flex: 0 0 calc(50% - 2rem);
+  }
+  
+  .labels {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .contact-input input {
+    width: 320px;
+  }
+  .firstname,
+  .lastname,
+  .email,
+  .phone {
+    width: 80px;
+  }
+  
+  .contact-title h3 {
+    font-weight: 900;
+  }
+  
+  
+  .footer {
+    margin-top: 80px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-content h4 {
+    font-weight: 900;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    /* font-size: 15px; */
+  }
+  
+  .insta-linkedIn img {
+    padding-left: 30px;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    background: #ebebeb;
+    padding: 10px 0;
+  }
+  
+  /* -----------------------------------------------------------------------------------------------------------------------
+                                          MEDIA QUERY  360
+  --------------------------------------------------------------------------------------------------------------------------*/
+  
+  
+  @media screen and (max-width:360px) {
+    
+   
+    .header-content {
+      
+      flex-direction: column-reverse;
+     
+    }
+  
+   
+    .nav-items {
+     
+     display: none;
+    }
+  
+    
+    /* ---------------------------------------------
+                Home
+    -----------------------------------------------*/
+    .home-content {
+      margin-top: 80px;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+   
+    
+    .home-content p {
+  
+      max-width: 300px;
+      background-color: red;
+      
+    }
+    
+  
+    .home-part1-img {
+     display: none;
+    }
+  
+    
+    .brands-content p {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .brands-img {
+      display: flex;
+      flex-wrap: wrap;
+    
+    }
+    
+   
+    
+    .content-below-ima {
+    
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+     
+    }
+    
+    .content-below-ima .part1,
+    .content-below-ima .part2 {
+      
+      flex: 0 0 100%;
+      
+      color: #050605;
+      opacity: 1;
+     
+      
+    }
+    
+    .content-below-ima .part1 h4 {
+    
+      padding-left: 0;
+      max-width: 330px;
+      margin: 0 auto;
+      text-align: center;
+  
+  
+  
+     
+    }
+    .content-below-ima .part1 p {
+      padding-left: 0;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+  
+    }
+    
+    .content-below-ima .part2 h4 {
+  
+     
+      padding-right: 0;
+      max-width: 330px;
+      margin: 30px auto;
+      text-align: center;
+     
+    }
+    .content-below-ima .part2 p {
+      padding-right: 0;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+     
+  
+    }
+    .content-below-ima .part1 a {
+      padding-left: 0;
+      width: 360px;
+  
+     
+    }
+    
+    .content-below-ima .part2 a {
+     
+      padding-right: 0;
+      width: 360px;
+    }
+    
+    .last-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-top: 80px;
+      max-width: 360px;
+    }
+    .last-content p {
+      max-width: 300px;
+    }
+    
+    .last-content h3 {
+      font-weight: 800;
+    }
+    .discover-content {
+      margin-top: 80px;
+     flex-direction: column-reverse;
+    }
+    .discover-img,
+    .discover-part2 {
+      flex: 0 0 calc(50% - 2rem);
+    }
+    
+    .discover-content h3 {
+      color: #050605;
+      opacity: 1;
+      font-weight: 800;
+      margin-bottom: 27px;
+      text-align: center;
+    }
+    
+    .discover-content p {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .discover-btn {
+  
+      width: 300px;
+      display: inline-block;
+  
+      margin:20px 10px;
+      text-align: center;
+    }
+    
+  
+   
+    .discover-back-img {
+      display: none;
+    }
+    .discover-img img{
+      display: block;
+      width: 315px;
+     
+    }
+    
+    .best-brand-influencer-content {
+      margin-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      
+    }
+    
+    .best-brand-influencer-content-part2 {
+      margin-left: 70px;
+    }
+    
+    .best-brand-influencer-content-part1-images {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    .best-brand-influencer-content-part1-images .img1,
+    .best-brand-influencer-content-part1-images .img2,
+    .best-brand-influencer-content-part1-images .img3 {
+      flex: 0 0 calc(33.333% - 1rem);
+    }
+    
+    .best-brand-influencer-content-part1-images .img1 p,
+    .best-brand-influencer-content-part1-images .img2 p,
+    .best-brand-influencer-content-part1-images .img3 p {
+      width: 92px;
+      height: 36px;
+    }
+    
+    .best-brand-influencer-content-part1-images .img2 p {
+      width: 100px;
+      height: 36px;
+    }
+    
+    .best-brand-influencer-content-part1-images .img3 p {
+      width: 140px;
+      height: 36px;
+    }
+    
+    .best-brand-influencer-content-part1 h3 {
+      color: #050605;
+      opacity: 1;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    
+    .best-brand-influencer-content-part1 p {
+      margin-bottom: 33px;
+    }
+    
+    .best-brand-influencer-content .best-brand-influencer-content-part2 img{
+           display: none
+  
+      }
+    
+    .tiktok-content {
+      flex-direction: column-reverse;
+      margin-top: 80px;
+      text-align: center;
+    }
+    .tiktok-content .part1,
+    .tiktok-content .part2 {
+      flex: 0 0 100%;
+    }
+    
+    .tiktok-content .part2 h3 {
+      color: #050605;
+      opacity: 1;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    
+    .tiktok-content .part2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+    .tiktok-content .part1 img{
+      width: 320px;
+    }
+    .instagram {
+      margin-top: 80px;
+    }
+    
+    .instagram-title {
+      text-align: center;
+    }
+    .instagram-title p {
+      max-width: 674px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+    
+    .insta-btn {
+      background: #22c6f9;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 10px;
+    }
+    
+    .insta-btn a {
+      color: #fff;
+    }
+    
+    .insta-featured {
+      text-align: center;
+      margin-top: 60px;
+    }
+    
+    .featured-contents {
+      margin-top: 32px;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+    .feature{
+      padding: 10px 0;
+    }
+    
+    .blog {
+      margin-top: 88px;
+      text-align: center;
+    }
+    .blog h4 {
+      color: #050605;
+      opacity: 1;
+      font-weight: 600;
+    }
+    .blog-img {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 17px;
+    }
+    .blog1{
+    width: 310px;
+    height: 200px;background-color: #5BC9E0;border-radius: 10px;
+    margin-bottom: 10px;
+    }
+    
+    .blog2{
+        width: 310px;
+        height: 200px;background-color: #FEC00F;border-radius: 10px;
+    margin-bottom: 10px;
+  
+        }
+    
+        .blog3{
+            width: 310px;
+            height: 200px;background-color: #18425B;border-radius: 10px;
+            
+            }
+  
+    .Ellipse-34 {
+      display: none;
+    }
+    
+    .Ellipse-35 {
+      display: none;
+  
+    }
+    
+    .contactus-data {
+      
+      background: none;
+      flex-direction: column;
+      margin: 0;
+     
+    }
+    .contact-img {
+      background: url('/img/Mask\ Group\ 4.jpg') center/cover no-repeat;
+     
+      width: 30px;
+      height: 365px;
+      margin:0 auto;
+    }
+    
+    .contact-form {
+      background-color: #fff;
+      height: 365px;
+      padding: 0;
+      /* margin-left: -100px; */
+  
+      
+    }
+    .contact-img,
+    .contact-form {
+      flex: 0 0 100%;
+    }
+    
+    .labels {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    
+    .contact-input input {
+      width: 300px;
+    }
+    .firstname,
+    .lastname,
+    .email,
+    .phone {
+      width: 100px;
+    }
+    
+    .contact-title h3 {
+      font-weight: 900;
+    }
+    
+    .contact-btn {
+      background-color: #fc3990;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .contact-btn a {
+      color: #fff;
+    }
+    
+    .footer {
+      margin-top: 480px;
+    }
+    
+    .footer-content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .footer-content h4 {
+      font-weight: 900;
+    }
+    
+    .footer-content ul {
+      list-style-type: none;
+      /* font-size: 15px; */
+    }
+    
+    .insta-linkedIn img {
+      padding-left: 30px;
+    }
+    
+    .footer-copyright {
+      text-align: center;
+      background: #ebebeb;
+      padding: 10px 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------
+                                               about start
+  ----------------------------------------------------------------------------------------------------------------------- */
+  
+  
+  /* navbar */
+  
+  .container{
+    background-color: red;
+  }
+  /* .navbar {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  .nav-logo {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-top: 25px;
+    width: 134px;
+    height: 100px;
+  
+    
+    
+   
+  }
+  
+  .nav-list {
+    flex: 0 0 80%;
+    max-width: 80%;
+   } 
+  .nav-links{
+    display: flex;
+   
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #050605;
+    font: normal normal normal 16px/19px Lato;
+  }
+  
+  .title{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+   
+  }
+  .home{
+    padding: 0 50px 0 0  ;
+    width: 20px;
+  height: 19px;
+  }
+  .about{
+    padding: 0 49px 0 0;
+    width: 45px;
+  height: 19px;
+  }
+  .influencers{
+    padding: 0 50px 0 0;
+    width: 79px;
+  height: 19px;
+  
+  }
+  .brands-agencies{
+    padding: 0 50px 0 0;
+    width: 130px;
+    height: 19px;
+  
+  }
+  
+  .full-service-campaigns{
+    padding: 0 50px 0 0;
+    width: 161px;
+  height: 19px;
+  
+  }
+  
+  .blog{
+    padding: 0 50px 0 0;
+    width: 32px;
+  height: 19px;
+  
+  }
+  .contact{
+    padding: 0 0 0 0;
+    width: 97px;
+    height: 36px;
+  
+  
+  }
+  
+  .contact-btn{
+    border-radius: 10px;
+    background: #22C6F9 0% 0% no-repeat padding-box;
+    border: transparent;
+  }
+  
+  .contact-btn a{
+    width: 57px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 16px/19px Lato;
+    color: #FFFFFF;
+    padding: 8px 20px 9px 20px;
+  } */
+  /* navbar end */
+  
+  /*--------------------------------------------------------------------------------------------------------------------
+                                               about end
+  ----------------------------------------------------------------------------------------------------------------------- */
+  
