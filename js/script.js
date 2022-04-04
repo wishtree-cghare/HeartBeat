@@ -21,11 +21,12 @@ $(function(){
           // $(this).addClass('active'); $(this).parents('li').addClass('active');
           $(this).css({
             "color":"#FC3990",
-            "border-bottom": "2px solid FC3990"
+            "border-bottom": "2px solid #FC3990"
           })
       }
   });
 });
+
 
 
 // collapsible on plus minus
