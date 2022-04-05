@@ -56,9 +56,28 @@ $(function () {
     nav: true,
     dots: false,
     navText: [
-      "<img src='../img/down-arrow.jpg'>",
+      "<img src='img/down-arrow.jpg'>",
 
-      "<img src='../img/up-arrow.jpg'>",
+      "<img src='img/up-arrow.jpg'>",
+    ],
+    
+  });
+});
+
+// heartbeat tem members slide
+$(function () {
+  $("#heartbeat-team").owlCarousel({
+    items:3,
+    autoplay: false,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    navText: [
+      "<img src='img/down-arrow.jpg'>",
+
+      "<img src='img/up-arrow.jpg'>",
     ],
     
   });

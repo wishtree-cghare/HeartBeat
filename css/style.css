@@ -747,6 +747,9 @@ padding-bottom: 250px;
 
  /* section : The HeartBeat Team  */
 
+ .heartbeat-team-wrapper-responsive{
+   display: none;
+ }
  .circle{
   width: 265px;
   height: 265px;
@@ -1692,8 +1695,8 @@ margin-bottom: 40px;
   }
 
   .fingertips-insta::before{
-    content: url('../img/580b57fcd9996e24bc43c521.jpg');
-    width: 80px;
+  content: url('../img/580b57fcd9996e24bc43c521.jpg');
+  width: 80px;
   height: 80px;
   position: absolute;
   left:53%;
@@ -1705,9 +1708,7 @@ margin-bottom: 40px;
     align-items: center;
   }
 
-
   .wave-goodbye-info{
-
     flex: 0 0 54%;
     max-width: 54%;
   }
@@ -3028,6 +3029,7 @@ display: inline-block;
     flex-wrap: wrap;
   }
   
+
   .label-title{
     flex:0 0 100%;
     max-width: 100%;
@@ -3040,6 +3042,44 @@ display: inline-block;
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  .every-influencers-voice-wrapper,
+  .small-influencers-wrapper,
+  .share-the-love-wrapper
+  {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align:  center;
+  }
+  .every-influencers-voice-banner,
+  .every-influencers-voice-info,
+  .small-influencers-banner,
+  .small-influencers-info,
+  .share-the-love-banner,
+  .share-the-love-info
+
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+  }
+  .every-influencers-voice-info,
+  .small-influencers-info,
+  .share-the-love-info
+  {
+    padding: 0;
+    padding: 0 50px;
+    padding-top: 40px;
+
+  }
+
+  .small-influencers-wrapper,
+  .share-the-love-wrapper{
+    flex-direction: column-reverse;
+  }
+
+  
+
  
 }
 
@@ -3094,6 +3134,9 @@ display: inline-block;
     border: none;
   }
 
+  .heartbeat-team-wrapper-responsive{
+    display: inline-block;
+  }
   .owl-theme .owl-nav [class*=owl-] {
     background: transparent;
     display: inline;
@@ -3136,8 +3179,13 @@ display: inline-block;
     /* max-width: 100%; */
   }
   
+  .heartbeat-team-wrapper{
+    display: none;
+  }
+ 
  
 }
+
 @media screen and (max-width : 770px) {
 
   .footer-wrapper{
@@ -3163,8 +3211,6 @@ display: inline-block;
   
   }
 
-}
-@media screen and (max-width : 770px) {
   .instagram-title p{
     padding: 0 100px;
     
@@ -3207,9 +3253,6 @@ display: inline-block;
 
 @media screen and (max-width : 663px) {
 
-  .footer-wrapper{
-    /* justify-content: space-between; */
-  }
   .footer-loGo,
   .footer-ambassador,
   .footer-brands,
