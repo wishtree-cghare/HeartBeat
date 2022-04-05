@@ -333,7 +333,7 @@ img {
 
 .compaigns-info-link{
   color: #22C6F9;
-  float: left;
+
 
 }
 .compaigns-info-link{
@@ -3236,6 +3236,8 @@ display: inline-block;
     margin-bottom: 50px;
   }
 
+ 
+
   .best-brand-influencer-content-part1-images {
     flex-wrap: wrap;
   }
@@ -3321,6 +3323,10 @@ display: inline-block;
   flex: 0 0 100%;
   max-width: 100%;
   
+}
+
+.compaigns-info-link{
+  float: left;
 }
 .union5{
   margin-top:15px;
