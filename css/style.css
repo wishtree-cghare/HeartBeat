@@ -83,6 +83,11 @@ img {
    
 }
 
+.nav-links .nav-contact-btn:hover{
+  background-color: #FC3990;
+  color: #FFFFFF;
+
+}
 .nav-links a {
   text-decoration: none;
   color: #050605;
@@ -90,6 +95,9 @@ img {
   text-transform: capitalize;
 }
 
+.nav-links .nav-contact-btn{
+  color: #FFFFFF;
+}
 .title{
   display: flex;
   justify-content: flex-end;
@@ -106,11 +114,6 @@ img {
  
 }
 
-.nav-contact-btn a{
-  
-  font: normal normal bold 16px/19px Lato;
-  color: #FFFFFF;
-}
 
 /* active nav link */
 
@@ -152,11 +155,14 @@ img {
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
-    z-index: 2;
+    z-index: 9999;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0 30px;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
   }
 
   .sidebar-links{
@@ -185,7 +191,8 @@ img {
       font-size: 2rem;
       background: transparent;
       border: transparent;
-      color:#bb2525
+      color:#bb2525;
+      cursor: pointer;
 
   }
   /* .nav-btn{
@@ -260,7 +267,7 @@ img {
   font-weight: 900;
 }
 
-.home-info button{
+.home-info a{
   background: #22C6F9 0% 0% no-repeat padding-box;
   border-radius: 10px;
   padding: 14px 20px;
@@ -270,11 +277,12 @@ img {
   background: #22C6F9 0% 0% no-repeat padding-box;
   margin-right: 10px;
 }
-.button1 a,
-.button2 a{
+.button1,
+.button2{
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 900;
+
 }
 .home-info .button2{
   background: #FC3990 0% 0% no-repeat padding-box;
@@ -644,6 +652,7 @@ padding-bottom: 250px;
  .share-the-love-banner{
   flex: 0 0 46%;
   max-width: 46%;
+  /* background-color: red; */
 }
 
 
@@ -657,9 +666,7 @@ padding-bottom: 250px;
    padding-right: 75px;
  }
 
- .share-the-love-info p{
-  font: normal normal normal 15px/22px Lato;
- }
+
 
  /* end */
 
@@ -756,7 +763,6 @@ padding-bottom: 250px;
   background: #C5C5C5 0% 0% no-repeat padding-box;
   border-radius: 360px;
   margin: 0 auto;
-
   margin-bottom: 25px;
 
  }
@@ -797,7 +803,9 @@ padding-bottom: 250px;
 
 
 
- .team-part-1 p{
+ .team-part-1 p,
+ .team-part-2 p
+ {
   
   text-align: center;
  }
@@ -840,15 +848,13 @@ padding-bottom: 250px;
   margin-top: 70px;
   background: #FC3990 0% 0% no-repeat padding-box;    
   max-width: 100%;
-  height: 187px;
   text-align: center;
   padding-top:40px ;
   padding-bottom: 50px;
  }
 
  .career-wrapper h2{
-  width: 452px;
-  height: 37px;
+  
   color:#FFFFFF;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -1064,7 +1070,7 @@ font-size: 15px;
  .contactus{
   background: url('../img/Contact-us-background.jpg') center/cover no-repeat;
   margin-top: 60px;
-  padding: 60px;
+  padding: 50px 80px ;
  }
 .contact-wrapper{
  
@@ -1080,7 +1086,7 @@ font-size: 15px;
 .contact-img img{
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
  
  .contact-form{
@@ -1097,14 +1103,12 @@ font-size: 15px;
   
  }
 
- .inputs{
-   margin-top: 17px;
 
- }
 
  .labels{
    display: flex;
    align-items: flex-end;
+   padding-top: 17px;
  
  }
 
@@ -1123,8 +1127,10 @@ font-size: 15px;
 
  .labels
  {
-   margin-bottom: 32px;
+   margin-bottom: 10px;
  }
+
+
 
  input{
   width: 80%;
@@ -1148,18 +1154,19 @@ font-size: 15px;
  }
 
  .contact-btn button{
-  width: 202px;
-  height: 50px;
+  
   background: #FC3990 0% 0% no-repeat padding-box;
-border-radius: 10px;
-border: transparent;
-color: #FFFFFF;
-font: normal normal bold 18px/22px Lato;
+  border-radius: 10px;
+  border: transparent;
+  color: #FFFFFF;
+  margin:15px 0;
+  font-weight: 900;
+  padding: 14px 20px;
+
  }
 
  .contact-title{
-  width: 157px;
-  height: 37px;
+
   font-weight: 900;  
 
  }
@@ -1211,26 +1218,25 @@ height: auto;
 .insta-linkedIn img{
   margin: 0 30px;
   width: 24px;
-height: 24px;
+  height: 24px;
  
 
 }
 
 
-
-.footer-copyright p{
-  
-height: 18px;
-padding: 16px 0;
-}
-
 .footer-copyright{
   margin-top: 30px;
   background: #EBEBEB 0% 0% no-repeat padding-box;
   width: 100%;
-  height: 50px;
   text-align: center;
 }
+
+
+
+.footer-copyright p{
+  padding: 16px 0;
+  }
+  
 /*--------------------------------------------------------------------------------------------------------------------
                                              about end
 ----------------------------------------------------------------------------------------------------------------------- */
@@ -1256,19 +1262,14 @@ padding: 16px 0;
 
 }
 
-/* .become-brand-ambassador-info h2{
-  padding-right: 117px;
-} */
 .become-brand-ambassador-banner{
   flex : 0 0 50%;
   max-width: 50%;
-
-
-}
-
-.become-brand-ambassador-banner{
   padding-left: 51px;
+
+
 }
+
 .become-brand-ambassador-info h2{
   margin-bottom: 20px;
 }
@@ -1278,9 +1279,7 @@ padding: 16px 0;
   margin-bottom: 30px;
 }
 
-/* .become-brand-ambassador-info {
-  padding-right: 51px;
-} */
+
 
 .become-brand-ambassador-info a{
   color: #FC3990  ;
@@ -1305,6 +1304,7 @@ post-tiktok-insta*/
   margin-top: 80px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
 }
 
@@ -1317,7 +1317,7 @@ post-tiktok-insta*/
 }
 
 .post-tiktok-insta-info{
-  padding-left: 51px;
+  padding-left: 50px;
 }
 .post-tiktok-insta-banner{
   
@@ -1347,12 +1347,11 @@ post-tiktok-insta*/
 
 .post-tiktok-insta-info h2{
   margin-bottom: 10px;
-  width: 526px;
-  max-height: 37px;
+  
 }
 
 .post-tiktok-insta-info p{
-  max-width: 543px;
+ 
 margin-bottom: 15px;
 }
 
@@ -1458,6 +1457,23 @@ font-weight: bold;
   text-align: center;
 }
 
+.collapsible-div{
+  display: flex;
+  align-items: center;
+}
+
+.collapsible-div h4{
+  flex: 0 0 95%;
+  max-width: 95%;
+}
+
+.collapsible-div button{
+  /* background-color:pink; */
+  flex: 0 0 5%;
+  max-width: 5%;
+  
+}
+
 .questions-list{
   width: 1140px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1473,7 +1489,6 @@ font-weight: bold;
 }
 
 .answer{
-  font: normal normal normal 15px/22px Lato;
   margin-top: 10px;
 }
 .question{
@@ -1483,12 +1498,12 @@ font-weight: bold;
   color: white;
   cursor: pointer;
   border: none;
-  text-align: left;
+  /* text-align: left; */
   outline: none;
   font-size: 15px;
   color:#FC3990;
   background: transparent;
-  float: right;
+  /* float: right; */
   width: 15px;
   height: 15px;
 
@@ -1496,7 +1511,7 @@ font-weight: bold;
 
 
 
-.collapsible:after {
+.collapsible-div:after {
   content: '\002B';
   font-weight: bold;
   float: right;
@@ -1576,6 +1591,7 @@ font-weight: bold;
 text-decoration: none;
 padding: 11px 20px;
 color:#FFFFFF;
+text-align: center;
 
 }
 
@@ -1595,6 +1611,7 @@ display: inline-block;
 .acquire-survey-market-track-banner{
 
   display: flex;
+  /* justify-content: center; */
 }
 
 .acquire-survey-market-track-banner-acquire,
@@ -1603,21 +1620,33 @@ display: inline-block;
 .acquire-survey-market-track-banner-track{
   flex : 0 0 25%;
   max-width: 25%;
-  /* padding-right:40px ; */
+ 
 }
 
+
+
 .acquire-survey-market-track-banner-acquire{
-  padding-right:40px ;
+  padding:0 30px ;
+  padding-left: 0;
 
 }
 .acquire-survey-market-track-banner-survey{
-  padding-right:48px ;
+  padding:0 30px ;
 
 }
 .acquire-survey-market-track-banner-market{
-  padding-right:57px ;
+  padding:0 30px ;
+
 
 }
+.acquire-survey-market-track-banner-track{
+  padding:0 30px ;
+
+  padding-right: 0;
+}
+
+
+
 
 
 .acquire-survey-market-track-banner-acquire img,
@@ -1658,15 +1687,12 @@ display: inline-block;
 }
 
 .fingertips-hottest-platforms-info h2{
-  width: 502px;
-height: 74px;
+ 
 margin-bottom: 40px;
 }
 
  .fingertips-tiktok p{
 
-  width: 373px;
-  height: 62px;
   margin-bottom: 58px;
   margin-left: 90px;
   position: relative;
@@ -1677,8 +1703,7 @@ margin-bottom: 40px;
 
  .fingertips-insta p{
 
-  width: 382px;
-  height: 84px;
+ 
   margin-left: 90px;
   position: relative;
   padding-left: 10px;
@@ -1749,14 +1774,12 @@ margin-bottom: 40px;
   }
   .run-campaigns-info h2{
 
-    width: 393px;
-    height: 74px;
+
     margin-bottom: 10px;
   }
 
   .run-campaigns-info p{
-    width: 477px;
-    height: 84px;
+  
     margin-bottom: 20px;
 
   }
@@ -1779,14 +1802,13 @@ margin-bottom: 40px;
   .heartbeat-free-trial .container{
     max-width: 100%;
     margin-top: 80px;
-    height: 303px;
-    background: transparent linear-gradient(90deg, #FC3990 0%, #D60060 100%) 0% 0% no-repeat padding-box;
+    background:linear-gradient(90deg, #FC3990 0%, #D60060 100%) center/cover no-repeat;
     text-align: center;
 
   }
   
   .heartbeat-free-trial-wrapper{
-    padding:50px 0;
+    padding:50px 200px;
   }
  
   .heartbeat-free-trial-wrapper h2{
@@ -1797,30 +1819,33 @@ margin-bottom: 40px;
   .heartbeat-free-trial-wrapper-para1
     {
     color: #FFFFFF;
-    width: 686px;
-      height: 40px;
-    margin: 0 auto;
+  
     margin-bottom: 20px;
+    /* text-align: center; */
   }
 
-  .heartbeat-free-trial-wrapper button{
-    width: 352px;
-    height: 40px;
-    /* UI Properties */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+  .heartbeat-free-trial-wrapper a{
+    
+    background: #FFFFFF;
     border-radius: 10px;
     color:  #050605;;
     font-weight: bold;
     margin-bottom: 22px;
     border: transparent;
+    padding: 11px 20px;
+    text-decoration: none;
+    display: inline-block;
+    
   }
 
   .heartbeat-free-trial-wrapper-para2{
 
-    width: 550px;
-    height: 34px;
+  
     color: #FFFFFF;
-    margin: 0 auto;
+    
+    text-align: center;
+
+    /* background-color: red; */
 
 
   }
@@ -1839,6 +1864,10 @@ height: 15px;
     flex: 0 0 33.333%;
     max-width: 33.333%;
     padding-right: 80px;
+  }
+
+  .media-agencies{
+    padding-right: 0;
   }
 
   .in-house-team img,
@@ -1968,12 +1997,12 @@ height: 15px;
   
   .hands-on-analytics-info h2{
     margin-bottom:10px;
-    max-width: 526px;
+  
     
   }
 
   .hands-on-analytics-info p{
-   max-width: 543px;
+  
     margin-bottom:20px;
   }
   
@@ -2025,12 +2054,12 @@ height: 15px;
   
   .influencer-technology-info h2{
     margin-bottom:10px;
-    max-width: 526px;
+    
     
   }
 
   .influencer-technology-info p{
-   max-width: 543px;
+  
     margin-bottom:20px;
   }
   
@@ -2056,7 +2085,7 @@ height: 15px;
  }
 
  .flexible-pricing-wrapper p{
-   max-width: 570px;
+   /* max-width: 570px; */
    margin: 0 auto;
    margin-bottom: 30px;
  }
@@ -2064,11 +2093,13 @@ height: 15px;
  .premium-plans{
    margin-top: 30px;
    display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
  }
 
  .premium-plan{
-   flex: 0 0 33.333%;
-   max-width: 33.333%;
+   flex: 0 0 30%;
+   max-width: 30%;
  }
 
  .premium-plan{
@@ -2079,11 +2110,7 @@ height: 15px;
   max-width: 360px;
   position: relative;
  }
- .standard,
- .full-service
- {
-   max-height: 452px;
- }
+
  .standard .hr,
  .full-service .hr
 
@@ -2103,6 +2130,7 @@ height: 15px;
    height: 1px;
    background-color: #D60060;
    margin-bottom: 20px;
+
  }
 
  .premium-plan h2{
@@ -2114,8 +2142,8 @@ height: 15px;
  .premium-plan p{
    margin-bottom:20px;
  }
- .standard button,
- .full-service button
+ .standard a,
+ .full-service a
  
  {
   background: #22C6F9 0% 0% no-repeat padding-box;
@@ -2124,9 +2152,11 @@ height: 15px;
   padding: 11px 20px;
   border: transparent;
   color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
  }
 
- .pro button
+ .pro a
  
  {
   background: #FC3990 0% 0% no-repeat padding-box;
@@ -2135,6 +2165,10 @@ height: 15px;
   padding: 11px 20px;
   border: transparent;
   color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+
+
 
  }
 
@@ -2185,6 +2219,8 @@ height: 15px;
  }
  .case-study-frames{
    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
  }
 
 
@@ -2193,37 +2229,39 @@ height: 15px;
   box-shadow: 0px 3px 15px #00000029;
   border-radius: 20px;
   width: 360px;
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: 33.333%;
 
  }
 
- .frames1 .frame1
+ .frame1
  {
   padding: 30px 30px 30px 30px;
   
 
  }
- .frames1 .frame2{
+ .frame2{
    padding: 58px 30px 30px 30px;
  }
 
- .frames1 .frame3{
+ .frame3{
   padding: 30px 30px 30px 30px;
 
  }
 
- .frames1 .frame1 img{
+  .frame1 img{
    margin-bottom: 20px;
    width: 67px;
   height: 120px;
  }
 
- .frames1 .frame2 img{
+ .frame2 img{
    margin-bottom: 49px;
    width: 120px;
   height: 64px;
  }
 
- .frames1 .frame3 img{
+ .frame3 img{
    margin-bottom: 20px;
    width: 161px;
   height: 120px;
@@ -2234,106 +2272,85 @@ height: 15px;
    text-align: left;
  }
  
- .frames1 .frame1,
- .frames1 .frame2{
-   margin-right: 30px;
- }
 
 
- .frames2 .frame1,
- .frames2 .frame2{
-   margin-right: 30px;
- }
 
- .frames2 .frame1,
- .frames2 .frame2,
- .frames2 .frame3
+
+ .frame4,
+ .frame5,
+ .frame6
 
  {
    margin-top: 30px
  }
  .case-study-ratings{
    display: flex;
+   justify-content: space-between ;
+  
  }
- .frames1 .rating1,
- .frames1 .rating2,
- .frames1 .rating3{
-   flex: 0 0 33.333%;
+ .frame .rating1,
+ .frame .rating2,
+ .frame .rating3{
+   flex: 0 0 calc(33.333% - 20px);
    max-width: 33.333%;
  }
-  .rating1,
+  /* .rating1,
   .rating2{
     padding-right: 30px;
- }
+ } */
 
+ .rating3{
+   padding-right: 0;
+ }
  .rating1 p,
   .rating2 p,
   .rating3 p
   {
     font-size: 13px;
   }
- /* frames 2 */
 
-
-
- .frames2 .frame1
+.frame4
  {
   padding: 30px 30px 30px 30px;
   
 
  }
- .frames2 .frame2{
+.frame5{
    padding: 56px 30px 30px 30px;
  }
 
- .frames2 .frame3{
+.frame6{
   padding: 30px 30px 30px 30px;
 
  }
 
- .frames2 .frame1 img{
+ .frame4 img{
    margin-bottom: 20px;
    width: 120px;
    height: 120px;
  }
 
- .frames2 .frame2 img{
+ .frame5 img{
    margin-bottom: 45px;
    width: 163px;
    height: 69px;
  }
 
- .frames2 .frame3 img{
+ .frame6 img{
    margin-bottom: 20px;
    width: 120px;
    height: 120px;
  }
 
- .frames2 .frame1 .rating1,
- .frames2 .frame1 .rating2,
- .frames2 .frame1 .rating3{
-   flex: 0 0 33.333%;
-   max-width: 33.333%;
- }
 
- .frames2 .frame2 .rating1{
+
+ .frame5 .rating1,
+ .frame5 .rating2
+ 
+ {
   flex: 0 0 50%;
   max-width: 50%;
  }
- .frames2 .frame2 .rating2
- {
-   flex: 0 0 50%;
-   max-width: 50%;
- }
-
- .frames2 .frame3 .rating1,
- .frames2 .frame3 .rating2,
- .frames2 .frame3 .rating3{
-   flex: 0 0 33.333%;
-   max-width: 33.333%;
- }
-
- 
 
 
 
@@ -2381,7 +2398,7 @@ height: 15px;
 
 .full-service-camp-info-btn{
 
-background: #FC3990 0% 0% no-repeat padding-box;
+background: #FC3990;
 border-radius: 10px;
 margin-bottom: 20px;
 border: transparent;
@@ -2445,7 +2462,7 @@ height: 430px;
 
 .run-camp-info ul li h2{
   margin-bottom: 10px;
-  font:normal normal bold 30px/37px Proxima Nova;
+  /* font:normal normal bold 30px/37px Proxima Nova; */
   
 }
 
@@ -2606,7 +2623,7 @@ height: 430px;
 
 .assure-brand-info h2{
   margin-bottom: 10px;
-  max-width: 416px;
+  
 }
 
 .is-full-service-right{
@@ -2656,7 +2673,7 @@ height: 430px;
 }
 
 .is-full-service-right-info-btn{
-background: #22C6F9 0% 0% no-repeat padding-box;
+background: #22C6F9;
 border-radius: 10px;
 margin-bottom: 20px;
 border: transparent;
@@ -2714,6 +2731,7 @@ display: inline-block;
 .good-company-banners{
   display: flex;
   align-items: center;
+  
 }
 
 .good-company-banner1,
@@ -2744,27 +2762,84 @@ display: inline-block;
   .nav-links li{
     padding: 0 20px;
   }
-  
+
+
+  .post-tiktok-insta-info,
+  .become-brand-ambassador-banner,
+  .about-follow-fit-info,
+  .experience-grow-creativity-banner,
+  .become-brand-ambassador-banner
+
+  {
+    padding-left: 30px;
+  }
+
+  .influencer-marketing-campaigns-info,
+  .wave-goodbye-info,
+  .influencer-technology-info,
+  .share-the-love-info
+
+  {
+    padding-right: 30px;
+  }
+  .lose-money-influencer-banner,
+  .run-campaigns-info,
+  .gain-consumer-insights-info,
+  .ugc-banner,
+  .hands-on-analytics-info
+  {
+    padding-left: 30px;
+  }
+
+
+.full-service-camp-banner{
+  padding-left: 30px;
+}
+.run-camp-info{
+  padding-left:30px;
 }
 
 
+.campaign-strategist-info{
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.campaign-strategist-banner{
+  flex: 0 0 52%;
+  max-width: 52%;
+}
 
+.campaign-strategist-info{
+  padding-right: 30px;
+}
 
+.marketing-channels-info{
+  padding-left: 30px;
+}
 
+.unparalleled-tracking-info{
+  padding-right: 20px;
+}
+
+.assure-brand-info{
+  padding-left: 30px;
+}
+
+.our-guarantee-info{
+  padding-right:20px;
+}
+}
 
 
 @media screen and (max-width : 1081px) {
   .content-below-ima .part1 .a2{
     padding-left: 230px;
-  /* padding-left: 250px; */
-
-  }
+}
 
   .best-brand-influencer-content{
   
     flex-wrap: wrap;
     flex-direction: column; 
-
     text-align: center;
     align-items: center;
 
@@ -2795,6 +2870,8 @@ display: inline-block;
   .nav-links li{
     padding: 0 15px;
   }
+
+
   
 }
 
@@ -2892,6 +2969,7 @@ display: inline-block;
       flex-wrap: wrap;
       max-width: 100%;
       text-align: center;
+      margin-top: 5px;
     }
     
     .resolution-nav-logo{
@@ -2931,6 +3009,7 @@ display: inline-block;
         color: black;
       
       }
+
      .line {
       border: 1px solid #383027;
       width: 0;
@@ -2943,7 +3022,26 @@ display: inline-block;
        flex: 0 0 25%;
        max-width: 25%;
      }
+
+     .bottom-nav .bottom-nav-union{
+       cursor: pointer;
+     }
   
+
+     .case-study-frames{
+       flex-wrap: wrap;
+     }
+
+     .frame{
+       flex : 0 0 calc(50% - 20px);
+       max-width: 50%;
+     }
+
+    .frame3
+    
+     {
+       margin-top: 30px
+     }
     
 }
 
@@ -2962,11 +3060,6 @@ display: inline-block;
   }
 }
 
-@media screen and (max-width : 950px) {
- 
-  
-   
-}
 
 
 @media screen and (max-width : 945px) {
@@ -3048,39 +3141,406 @@ display: inline-block;
   .share-the-love-wrapper
   {
     flex-wrap: wrap;
-    flex-direction: column;
-    text-align:  center;
+  
   }
-  .every-influencers-voice-banner,
-  .every-influencers-voice-info,
-  .small-influencers-banner,
-  .small-influencers-info,
-  .share-the-love-banner,
-  .share-the-love-info
+  
+  
 
+
+  .share-the-love-info,
+  .every-influencers-voice-info,
+  .small-influencers-info
   {
     flex: 0 0 100%;
     max-width: 100%;
-
-  }
-  .every-influencers-voice-info,
-  .small-influencers-info,
-  .share-the-love-info
-  {
     padding: 0;
-    padding: 0 50px;
     padding-top: 40px;
-
+    order: 2;
   }
 
-  .small-influencers-wrapper,
-  .share-the-love-wrapper{
-    flex-direction: column-reverse;
+  .share-the-love-banner,
+  .every-influencers-voice-banner,
+ 
+  .small-influencers-banner{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    
   }
 
+
+  .share-the-love-banner img,
+  .every-influencers-voice-banner img,
+  .small-influencers-banner img
+  {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+  .post-tiktok-insta-wrapper{
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  .post-tiktok-insta-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    padding-top: 40px;
+    
+  }
+ 
+
+  .post-tiktok-insta-banner{
+    flex : 0 0 100%;
+    max-width: 100%;
+  
+  }
+
+  .post-tiktok-insta-banner img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .become-brand-ambassador-wrapper,
+  .about-follow-fit-wrapper
+  {
+    flex-wrap: wrap;
+    padding: 0 50px;
+    
+  }
+
+  .become-brand-ambassador-info
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    padding-top: 40px;
+    order: 2;
+  }
+
+  .become-brand-ambassador-banner
+  
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    order: 1;
+  }
+
+  .become-brand-ambassador-banner img,
+  .about-follow-fit-banner img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .about-follow-fit-info,
+.about-follow-fit-banner{
+  flex : 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+  padding-top: 40px;
+}
   
 
+.experience-grow-creativity-wrapper{
+
+  flex-wrap: wrap;
+  padding: 0 50px;
+
+}
+
+.experience-grow-creativity-info{
+  flex : 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+  order:2;
+  padding-top: 40px;
+}
+.experience-grow-creativity-banner{
+  flex : 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+  order: 1;
+}
+
+.experience-grow-creativity-banner img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.influencer-review-row{
+  padding: 0 50px;
+}
+
+.review-row-1-review1,
+.review-row-2-review1,
+.review-row-3-review1,
+.review-row-4-review1,
+.review-row-5-review1,
+.review-row-6-review1
+
+{
+  flex: 0 0 calc(50% - 20px);
+  max-width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.review-row-1-review2,
+.review-row-2-review2,
+.review-row-3-review2,
+.review-row-4-review2,
+.review-row-5-review2,
+.review-row-6-review2
+
+
+{
+
+  flex: 0 0 calc(50% - 20px);
+  max-width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.frequetly-asked-questions-wrapper{
+  padding: 0 50px;
+}
+
+.blog-wrapper{
+  padding: 0 50px;
+}
+
+.influencer-review-row{
+  padding: 0 35px;
+}
+
+.influencer-marketing-campaigns-wrapper{
+  flex-wrap: wrap;
+}
+.influencer-marketing-campaigns-info{
+  flex: 0 0 100%;
+  max-width: 100%;
+  order: 2;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.influencer-marketing-campaigns-banner{
+  flex: 0 0 100%;
+  max-width: 100%;
+  order: 1;
+}
+
+.influencer-marketing-campaigns-banner img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fingertips-hottest-platforms-wrapper{
+  flex-wrap: wrap;
+}
+
+.fingertips-hottest-platforms-info{
+
+  flex:0 0 100%;
+  max-width: 100%;
+  padding: 0;
+  padding-top: 40px;
+
+}
+
+.fingertips-hottest-platforms-banner{
+
+  flex:0 0 100%;
+  max-width: 100%;
+  padding: 0;
+
+}
+
+
+.fingertips-tiktok p,
+.fingertips-insta p{
+
  
+  margin-left: 0;
+  position: relative;
+  padding-left: 130px;
+
+
+}
+
+.fingertips-tiktok::before,
+.fingertips-insta::before
+
+{
+  left: 20px;
+}
+.fingertips-hottest-platforms-banner img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.wave-goodbye-wrapper{
+  flex-wrap: wrap;
+}
+
+.wave-goodbye-banner{
+  flex: 0 0 100%;
+  max-width: 100%;
+  order: 1;
+  padding: 0;
+
+}
+
+.wave-goodbye-info{
+  flex: 0 0 100%;
+  max-width: 100%;
+  order: 2;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.wave-goodbye-banner img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.run-campaigns-wrapper,
+.lose-money-influencer-wrapper,
+.gain-consumer-insights-wrapper,
+.ugc-wrapper,
+.hands-on-analytics-wrapper,
+.influencer-technology-wrapper
+
+{
+  flex-wrap: wrap;
+}
+
+.run-campaigns-info,
+.lose-money-influencer-info,
+.gain-consumer-insights-info,
+.ugc-info,
+.hands-on-analytics-info,
+.influencer-technology-info
+{
+
+  flex: 0 0 100%;
+  max-width: 100%;
+  order: 2;
+  padding: 0;
+  padding-top: 40px;
+}
+.run-campaigns-banner,
+.lose-money-influencer-banner,
+.gain-consumer-insights-banner,
+.ugc-banner,
+.hands-on-analytics-banner,
+.influencer-technology-banner
+{
+  flex: 0 0 100%;
+  max-width: 100%;
+  order: 1;
+  padding: 0;
+}
+.run-campaigns-banner img,
+.lose-money-influencer-banner img,
+.gain-consumer-insights-banner img,
+.ugc-banner img,
+.hands-on-analytics-banner img,
+.influencer-technology-banner img
+
+{
+  width: 100%;
+  object-fit: cover;
+}
+
+.flexible-pricing .container{
+ 
+  text-align: left;
+
+  
+}
+
+
+.full-service-camp-wrapper,
+.run-camp-wrapper,
+.campaign-strategist-wrapper,
+.marketing-channels-wrapper,
+.unparalleled-tracking-wrapper,
+.assure-brand-wrapper,
+.is-full-service-right-wrapper,
+.our-guarantee-wrapper
+
+{
+  flex-wrap: wrap;
+}
+.full-service-camp-info,
+.run-camp-info,
+.campaign-strategist-info,
+.marketing-channels-info,
+.unparalleled-tracking-info,
+.assure-brand-info,
+.is-full-service-right-info,
+.our-guarantee-info
+
+
+{
+  flex : 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+  padding-top: 40px;
+  order:2
+}
+
+.is-full-service-right-info
+{
+  padding-left: 15px;
+}
+
+.is-full-service-right-info-link{
+  padding-bottom: 47px;
+}
+.full-service-camp-banner,
+.run-camp-banner,
+.campaign-strategist-banner,
+.marketing-channels-banner,
+.unparalleled-tracking-banner,
+.assure-brand-banner,
+.is-full-service-right-banner,
+.our-guarantee-banner
+
+{
+  flex : 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+  order: 1;
+
+}
+
+.full-service-camp-banner img,
+.run-camp-banner img,
+.campaign-strategist-banner img,
+.marketing-channels-banner img,
+.unparalleled-tracking-banner img,
+.assure-brand-banner img,
+.is-full-service-right-banner img,
+.our-guarantee-banner img
+
+{
+
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.heartbeat-team-wrapper p{
+  text-align: justify;
+}
+
 }
 
 
@@ -3120,23 +3580,43 @@ display: inline-block;
     display: flex;
     justify-content: space-between;
     }
-  .features-wrapper{
+
+  .features-wrapper,
+  .heartbeat-team-wrapper-responsive
+  
+  {
     position: relative;
   }
-  .feature-silde{
-    display: block;
+  .feature-silde,
+  .heartbeat-team-slide
+  
+  {
+    display: inline-block;
     padding:0 20px;
+
     
   }
-  .features-wrapper button {
+
+  .heartbeat-team-slide{
+    text-align: center;
+  }
+  .features-wrapper button,
+  .heartbeat-team-wrapper-responsive button
+  {
     display: inline-block;
     background: transparent;
     border: none;
   }
 
   .heartbeat-team-wrapper-responsive{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    
   }
+
+ 
   .owl-theme .owl-nav [class*=owl-] {
     background: transparent;
     display: inline;
@@ -3162,6 +3642,36 @@ display: inline-block;
     margin: 0 auto;
   }
 
+  .owl-theme .owl-nav [class*=owl-] {
+    background: transparent;
+    display: inline;
+  }
+
+  .heartbeat-team-wrapper-responsive .owl-theme .owl-nav [class*=owl-prev] {
+    background: transparent;
+    position: absolute;
+    top: 200px;
+    left: -1%;
+  }
+
+  .heartbeat-team-wrapper-responsive .owl-theme .owl-nav [class*=owl-next] {
+    background: transparent;
+    position: absolute;
+    top: 200px;
+    right: -1%;
+  }
+  .heartbeat-team-wrapper-responsive .owl-theme .owl-nav [class*=owl-]:hover {
+      background: none;
+      color: #212226;
+  }
+
+  .heartbeat-team-wrapper-responsive p{
+    text-align: justify;
+  }
+
+  .heartbeat-team-slide p{
+    margin: 0;
+  }
   
 
   .Ellipse-34 {
@@ -3183,8 +3693,46 @@ display: inline-block;
     display: none;
   }
  
+ .heartbeat-team{
+   margin-top: 80px;
+ }
+
+ .acquire-survey-market-track-banner{
+   flex-wrap: wrap;
+ }
+
+ .acquire-survey-market-track-banner-acquire,
+ .acquire-survey-market-track-banner-survey,
+ .acquire-survey-market-track-banner-market,
+ .acquire-survey-market-track-banner-track
+ {
+   flex: 0 0 50%;
+   max-width: 50%;
+   
+ }
+
+ .acquire-survey-market-track-banner-market{
+   padding-left: 0;
+   padding-top: 30px;
+ }
+
+ .acquire-survey-market-track-banner-track{
+   padding-top: 30px;
+ }
+
+
+ .acquire-survey-market-track-banner-survey{
+   padding-right: 0;
+ }
+
+ .heartbeat-free-trial-wrapper{
+  padding:50px 100px;
+}
+
+
  
 }
+
 
 @media screen and (max-width : 770px) {
 
@@ -3249,6 +3797,49 @@ display: inline-block;
     max-width: 100%;
     text-align: center;
   }
+
+  .best-brand-influencer-content-part1-images .img1,
+  .best-brand-influencer-content-part1-images .img2,
+  .best-brand-influencer-content-part1-images .img3
+
+
+  
+  {
+    padding: 0;
+  }
+
+  .premium-plans{
+    justify-content: flex-start;
+  }
+  .premium-plan{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .pro,
+  .full-service{
+    margin-top: 30px;
+  }
+
+  .house-business-media-wrapper{
+    flex-wrap: wrap;
+  }
+  
+  .in-house-team,
+  .small-business,
+  .media-agencies{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .small-business,
+  .media-agencies
+  {
+    padding-top: 30px;
+  }
+
+
 }
 
 @media screen and (max-width : 663px) {
@@ -3289,6 +3880,7 @@ display: inline-block;
   .best-brand-influencer-content-part1-images .img2{
     flex: 0 0 50%;
     max-width: 50%;
+    padding: 0;
   }
   .best-brand-influencer-content-part1-images .img3 {
     flex: 0 0 100%;
@@ -3313,8 +3905,76 @@ display: inline-block;
   .home-wrapper .head1{
     padding:0;
   }
+
+  .review-row,
+  .influencer-review-row{
+    flex-wrap: wrap;
+  }
+
+  .ambassadors-reviewes-wrapper{
+   
+    text-align: left;
+  }
+  .review-row-1-review1,
+  .review-row-1-review2,
+
+  .review-row-2-review1,
+  .review-row-2-review2,
+
+  .review-row-3-review1,
+  .review-row-3-review2,
+
+  .review-row-4-review1,
+  .review-row-4-review2,
+
+  .review-row-5-review1,
+  .review-row-5-review2,
+
+  .review-row-6-review1,
+  .review-row-6-review2
+  
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+.house-business-media-wrapper{
+  flex-wrap: wrap;
 }
 
+.in-house-team,
+.small-business,
+.media-agencies{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.frame{
+  flex : 0 0 100%;
+  max-width: 100%;
+}
+
+.frame2
+    
+{
+  margin-top: 30px
+}
+
+.heartbeat-free-trial-wrapper{
+  padding:50px 100px;
+}
+
+
+}
+
+@media screen and (max-width : 620px) {
+
+  .heartbeat-free-trial-wrapper{
+    padding:50px 50px;
+  }
+
+  
+}
 
 
 @media screen and (max-width : 550px) {
@@ -3330,6 +3990,88 @@ display: inline-block;
   .blog2{
     margin-top: 30px;
   }
+
+  .review-row{
+
+    flex-wrap: wrap;
+    
+  }
+  
+  .review-row-1-review1,
+  .review-row-1-review2,
+  .review-row-2-review1,
+  .review-row-2-review2,
+  .review-row-3-review1,
+  .review-row-3-review2,
+  .review-row-4-review1,
+  .review-row-4-review2,
+  .review-row-5-review1,
+  .review-row-5-review2,
+  .review-row-6-review1,
+  .review-row-6-review2
+  
+  
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .become-brand-ambassador-wrapper,
+  .post-tiktok-insta-wrapper,
+  .about-follow-fit-wrapper,
+  .experience-grow-creativity-wrapper,
+  .frequetly-asked-questions-wrapper,
+  .blog-wrapper
+
+  {
+    padding: 0 15px;
+  }
+
+  .influencer-review-row{
+    padding: 0 
+  }
+
+  .acquire-survey-market-track-banner-acquire,
+  .acquire-survey-market-track-banner-market,
+  .acquire-survey-market-track-banner-survey,
+  .acquire-survey-market-track-banner-track{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .acquire-survey-market-track-banner-market,
+  .acquire-survey-market-track-banner-survey,
+  .acquire-survey-market-track-banner-track{
+    padding-top: 30px;
+  }
+
+
+.good-company-banners{
+  flex-wrap: wrap;
+}
+
+.good-company-banner1,
+.good-company-banner2{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+
+}
+
+.good-company-banner2{
+  margin-top: 30px;
+}
+
+.good-company-banner1 img,
+.good-company-banner2 img{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+
+ 
 }
 
 @media screen and (max-width : 500px) {
@@ -3463,6 +4205,8 @@ display: inline-block;
   padding: 0;
  }
 
+
+
 }
 
 @media screen and (max-width : 450px) {
@@ -3490,6 +4234,109 @@ display: inline-block;
     }
 
  
+}
+
+
+
+
+@media screen and (max-width : 471px) {
+
+  .influencer-marketing-campaigns-info-btn
+  
+  {
+  
+    padding: 11px 10px;
+    
+    
+    }
+
+  .heartbeat-free-trial-wrapper a{
+      
+  
+    padding: 11px 10px;
+   
+    
+  
+  }
+
+  .full-service-camp-info-btn{
+    padding: 11px 10px;
+
+  }
+
+  .is-full-service-right-info-btn{
+    padding: 11px 10px;
+
+  }
+
+
+
+}
+
+
+
+
+@media screen and (max-width : 400px) {
+  .heartbeat-free-trial-wrapper {
+      padding: 50px 30px;
+
+  }
+
+
+  .full-service-camp-info-btn{
+    padding: 11px 5px;
+
+  }
+
+  .is-full-service-right-info-btn{
+    padding: 11px 5px;
+
+  }
+
+}
+
+@media screen and (max-width : 387px) {
+
+
+  .influencer-marketing-campaigns-info-btn,
+  .heartbeat-free-trial-wrapper a,
+  .full-service-camp-info-btn,
+  .is-full-service-right-info-btn
+  
+  {
+  
+    font-size: 13px;
+    
+    
+    }
+
+}
+
+@media screen and (max-width : 360px) {
+
+
+  .influencer-marketing-campaigns-info-btn,
+  .heartbeat-free-trial-wrapper a,
+  .full-service-camp-info-btn,
+  .is-full-service-right-info-btn
+  
+  {
+  
+    font-size: 11px;
+    
+    
+    }
+
+    .heartbeat-team-wrapper-responsive .owl-theme .owl-nav [class*=owl-prev] {
+     
+      left: -4%;
+    }
+  
+    .heartbeat-team-wrapper-responsive .owl-theme .owl-nav [class*=owl-next] {
+     
+      right: -4%;
+    }
+
 }
 
 

@@ -30,7 +30,7 @@ $(function(){
 
 
 // collapsible on plus minus
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible-div");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -67,13 +67,13 @@ $(function () {
 // heartbeat tem members slide
 $(function () {
   $("#heartbeat-team").owlCarousel({
-    items:3,
+    items:1,
     autoplay: false,
     smartSpeed: 700,
     loop: true,
     autoplayHoverPause: true,
     nav: true,
-    dots: false,
+    dots: true,
     navText: [
       "<img src='img/down-arrow.jpg'>",
 
