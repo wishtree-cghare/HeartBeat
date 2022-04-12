@@ -73,7 +73,7 @@ $(function () {
     loop: true,
     autoplayHoverPause: true,
     nav: true,
-    dots: true,
+    dots: false,
     navText: [
       "<img src='img/down-arrow.jpg'>",
 

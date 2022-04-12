@@ -7,6 +7,7 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #050605;
+  font-size: 15px;
 }
 
 .container{
@@ -19,15 +20,19 @@ h2{
 
   font: normal normal bold 30px/36px Lato;
   opacity: 1;
+  line-height: 2.3rem
+
 }
 
 h3{
   font: normal normal 900 18px/22px Lato;
+  line-height: 2.3rem
+
 }
 
 p{
  font: normal normal normal 15px/22px Lato;
- opacity: 1;
+ line-height: 22px;
 }
 
 img {
@@ -161,8 +166,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    max-height: calc(100vh - 60px);
-    overflow: auto;
+   
   }
 
   .sidebar-links{
@@ -191,7 +195,7 @@ img {
       font-size: 2rem;
       background: transparent;
       border: transparent;
-      color:#bb2525;
+      color:#FC3990;
       cursor: pointer;
 
   }
@@ -215,26 +219,26 @@ img {
 
 
 .home-wrapper {
-  margin-top:78px;
+  margin-top:80px;
   display: flex;
+  justify-content: space-between;
 }
 
 .head2{
   display: none;
 }
 
-.home-info{
-  flex : 0 0 48%;
-  max-width: 48%;
-}
-
+.home-info,
 .home-banner{
-  flex : 0 0 52%;
-  max-width: 52%;
+
+  flex : 0 0 calc(50% - 25px);
+  max-width: 50%;
 }
 
+
+
 .home-info{
-  padding-right: 97px;
+  /* padding-right: 87px; */
   position: relative;
   
 }
@@ -251,27 +255,27 @@ img {
   font: normal normal 900 45px/54px Lato;
 }
 
-.home-info .head2{
-  font: normal normal 900 30px/36px Lato;
-}
+
 
 .home-info p{
-  margin-bottom: 30px;
-  max-width: 100%;font: normal normal normal 18px/30px Lato;
+  /* margin-bottom: 30px; */
+  max-width: 434px;
   font: normal normal normal 18px/30px Lato;
- 
+  line-height: 30px;
+
 }
 
 .home-info h5{
-  margin-bottom: 20px;
+  margin-top: 30px;
   font-weight: 900;
-}
+  }
 
 .home-info a{
   background: #22C6F9 0% 0% no-repeat padding-box;
   border-radius: 10px;
   padding: 14px 20px;
   border: transparent;
+ 
 }
 .home-info .button1{
   background: #22C6F9 0% 0% no-repeat padding-box;
@@ -281,30 +285,29 @@ img {
 .button2{
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 900;
+  font-weight: bold;
+  
+}
 
+.home-buttons{
+  margin-top: 20px;
 }
 .home-info .button2{
   background: #FC3990 0% 0% no-repeat padding-box;
 }
 
+/* --------creators-------*/
 
 .brands {
-  margin-top: 76px;
+  margin-top: 80px;
 }
 
-.creators h3{
-  font: normal normal 900 30px/37px Lato;
-}
-.creators p{
-  font: normal normal normal 15px/22px Lato;
-}
-/* --------creators-------*/
+
 .creators .container {
   max-width: 960px;
   padding: 50px 0;
 }
-.creators h3 {
+.creators h2 {
   font-weight: 900;
   font-size: 30px;
   text-align: center;
@@ -312,7 +315,12 @@ img {
 }
 .creators p {
   text-align: center;
-  padding: 0 100px;
+  font: normal normal normal 15px/22px Lato;
+  line-height: 22px;
+  max-width: 812px;
+  margin: 0 auto;
+
+
 }
 /*-----compaigns---------*/
 .compaigns .container {
@@ -322,7 +330,8 @@ img {
 .compaigns .compaigns-info {
   display: flex;
   max-width: 100%;
-  padding-top: 20px;
+  margin-top: 22px;
+  /* padding-top: 20px; */
 }
 .compaigns .compaigns-info > div {
   padding-right: 30px;
@@ -330,31 +339,33 @@ img {
 .compaigns h3 {
   font-size: 20px;
   font-weight: bold;
+  line-height: 24px;
 }
 
 .compaigns-info h3{
 
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   
 
 }
 
 .compaigns-info-link{
   color: #22C6F9;
-
-
-}
-.compaigns-info-link{
   display: inline-block;
 
-  margin-top: 20px;
-  margin-bottom: 10px;
 
 }
+.compaigns-info-link1,
+.compaigns-info-link3
+{
+  margin-top: 20px;
 
+}
+.compaigns-info-link2{
+  margin-top: 10px;
+}
 
 .compaigns-info p{
-  margin-bottom: 20px;
   font: normal normal normal 15px/22px Lato;
 }
 
@@ -373,6 +384,7 @@ img {
 }
 
 .compaigns-imges{
+  margin-top: 38px;
   display: flex;
   justify-content: center;
 }
@@ -389,33 +401,32 @@ img {
 }
 
 .tiktok p{
-  text-align: center;
-  padding: 0 100px;
+  max-width: 728px;
+  margin: 0 auto;
+  line-height: 22px;
+  font-size: 15px;
 }
 
 .discoverVoice{
  
   overflow: hidden;
-  padding-top: 84px;
+  padding-top: 80px;
   padding-bottom: 220px;
 
 }
 .discoverVoice-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.discover-banner{
-  flex: 0 0 47%;
-  max-width: 47%;
-}
+.discover-banner,
 .discover-info {
-  flex: 0 0 53%;
-  max-width: 53%;
+
+  flex: 0 0 calc(50% - 25px);
+  max-width: 50%;
 }
 
-.discover-info{
-  padding-left: 52px;
-}
+
 
 .discover-content h2 {
   color: #050605;
@@ -455,29 +466,22 @@ img {
 }
 
 .best-brand-influencer{
-  margin-top: 84px;
+  margin-top: 40px;
 
 }
 .best-brand-influencer-content {
   display: flex;
+  justify-content: space-between;
   /* align-items: center; */
  
 }
-.best-brand-influencer-content-part1{
-  flex: 0 0 53%;
-  max-width: 53%;
-}
+.best-brand-influencer-content-part1,
 .best-brand-influencer-content-part2{
- 
 
-  flex: 0 0 47%;
-  max-width: 47%;
+  flex: 0 0 calc(50% - 25px);
+  max-width: 50%;
 }
 
-
-.best-brand-influencer-content-part2{
-  padding-left:62px;
-}
 
 
 .best-brand-influencer-content-part1-images {
@@ -507,6 +511,7 @@ img {
 
 .best-brand-influencer-content-part1 h2 {
   margin-bottom: 16px;
+  line-height: 2.5rem;
 }
 
 .best-brand-influencer-content-part1 p {
@@ -517,39 +522,32 @@ img {
 
 .advantage-rise-tiktok{
 
-  margin-top: 155px;
+  margin-top: 80px;
 }
 .tiktok-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
  
 }
-.tiktok-content .part1{
-  flex: 0 0 47%;
-  max-width: 47%;
-
-}
+.tiktok-content .part1,
 .tiktok-content .part2 {
-  flex: 0 0 53%;
-  max-width: 53%;
+
+  flex: 0 0 calc(50% - 25px);
+  max-width: 50%;
+
 }
 
-.tiktok-content .part2{
-  padding-left: 30px;
- 
-}
+
 .tiktok-content .part2 h2{
   
   margin-bottom:20px;
 }
 
-.tiktok-content .part2 {
-  padding-left: 30px;
-}
 
 
 .instagram {
-  margin-top: 60px;
+  margin-top: 80px;
   text-align: center;
   overflow: hidden;
 padding-bottom: 250px;
@@ -642,28 +640,20 @@ padding-bottom: 250px;
    padding-top: 78px;
    display: flex;
    align-items: center;
+   justify-content: space-between;
  }
 
- .share-the-love-info{
-   flex: 0 0 54%;
-   max-width: 54%;
- }
-
+ .share-the-love-info,
  .share-the-love-banner{
-  flex: 0 0 46%;
-  max-width: 46%;
-  /* background-color: red; */
-}
+   flex: 0 0 calc(50% - 25px);
+   max-width: 50%;
+ }
 
 
  .share-the-love-info h2,
  .every-influencers-voice-info h2,
  .small-influencers-info h2{
    margin-bottom: 10px;
- }
-
- .share-the-love-info{
-   padding-right: 75px;
  }
 
 
@@ -679,21 +669,14 @@ padding-bottom: 250px;
    align-items: center;
  }
 
- .every-influencers-voice-info{
+ .every-influencers-voice-info,
+ .every-influencers-voice-banner{
   
-  flex : 0 0 50%;
+  flex : 0 0 calc(50% - 25px);
   max-width: 50%;
   /* background-color: red; */
  }
 
- .every-influencers-voice-banner{
- 
-
-
-   flex : 0 0 50%;
-   max-width: 50%;
-   /* background-color: pink; */
-}
 
  .every-influencers-voice-info{
    padding-left: 50px;
@@ -715,24 +698,18 @@ padding-bottom: 250px;
    padding-top: 100px;
    display: flex;
    align-items: center;
+   justify-content: space-between;
 
  }
 
- .small-influencers-info{
-  flex: 0 0 50%;
+ .small-influencers-info,
+ .small-influencers-banner{
+  flex: 0 0 calc(50% - 25px);
   max-width: 50%;
 
  }
 
- 
- .small-influencers-banner{
-  
-  flex: 0 0 50%;
-  max-width: 50%;
- }
- .small-influencers-banner{
-   padding-left: 62px;
- }
+
  .small-influencers-info p{
  
   margin-bottom: 30px;
@@ -845,11 +822,11 @@ padding-bottom: 250px;
  /* section : Career  */
 
  .career .container{
-  margin-top: 70px;
+  margin-top: 80px;
   background: #FC3990 0% 0% no-repeat padding-box;    
   max-width: 100%;
   text-align: center;
-  padding-top:40px ;
+  padding-top:50px ;
   padding-bottom: 50px;
  }
 
@@ -880,7 +857,7 @@ padding-bottom: 250px;
 
  /* section  :embassador-reviews */
  .ambassadors-reviewes-wrapper{
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -895,14 +872,14 @@ padding-bottom: 250px;
     opacity: 1;
     text-align: left;
     border-radius: 10px;
-  /* width: 555px; */
-
+  
 }
 
 
 
 .box.arrow-botton {
   margin-bottom: 40px;
+  
 }
 .box.arrow-bottom:after {
   content: " ";
@@ -937,14 +914,11 @@ padding-bottom: 250px;
 .review-row-5-review1,
 .review-row-6-review1
 {
-  flex: 0 0 calc(52% - 30px);
-  max-width: 52%;
+  flex: 0 0 calc(50% - 15px);
+  max-width: 50%;
 }
 
-
-
 .review-row-1-review2,
-
 .review-row-2-review2,
 .review-row-3-review2,
 .review-row-4-review2,
@@ -952,8 +926,9 @@ padding-bottom: 250px;
 .review-row-6-review2
 
 {
-  flex: 0 0 calc(48% - 30px);
-  max-width: 48%;
+  flex: 0 0 calc(50% - 15px);
+  max-width: 50%;
+ 
 }
 
 .box h5{
@@ -1069,7 +1044,7 @@ font-size: 15px;
 
  .contactus{
   background: url('../img/Contact-us-background.jpg') center/cover no-repeat;
-  margin-top: 60px;
+  margin-top: 80px;
   padding: 50px 80px ;
  }
 .contact-wrapper{
@@ -1091,16 +1066,8 @@ font-size: 15px;
  
  .contact-form{
   background: #FFFFFF;
+  padding: 40px 30px;
  
- }
-
-
-
- .contact-data{
-   
-  padding-left: 30px;
-  padding-top: 32px;
-  
  }
 
 
@@ -1108,7 +1075,7 @@ font-size: 15px;
  .labels{
    display: flex;
    align-items: flex-end;
-   padding-top: 17px;
+   margin-bottom: 5px;
  
  }
 
@@ -1127,13 +1094,13 @@ font-size: 15px;
 
  .labels
  {
-   margin-bottom: 10px;
+   /* margin-bottom: 10px; */
  }
 
 
 
  input{
-  width: 80%;
+   width: 100%;
    border: none;
    border-bottom: 1px solid #050605;
    height: 40px;
@@ -1159,7 +1126,7 @@ font-size: 15px;
   border-radius: 10px;
   border: transparent;
   color: #FFFFFF;
-  margin:15px 0;
+  margin-top:30px;
   font-weight: 900;
   padding: 14px 20px;
 
@@ -1250,25 +1217,19 @@ height: auto;
 
 /* become-brand-ambassador */
 .become-brand-ambassador-wrapper{
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.become-brand-ambassador-info{
-  flex : 0 0 50%;
-  max-width: 50%;
-
-
-}
-
+.become-brand-ambassador-info,
 .become-brand-ambassador-banner{
-  flex : 0 0 50%;
+  flex : 0 0 calc(50% - 25px);
   max-width: 50%;
-  padding-left: 51px;
-
 
 }
+
 
 .become-brand-ambassador-info h2{
   margin-bottom: 20px;
@@ -1305,25 +1266,22 @@ post-tiktok-insta*/
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
-}
-
-.post-tiktok-insta-info{
-  flex: 0 0 50%;
-  max-width: 50%;
+  justify-content: space-between;
   /* background-color: red; */
 
-
 }
 
-.post-tiktok-insta-info{
-  padding-left: 50px;
-}
+.post-tiktok-insta-info,
 .post-tiktok-insta-banner{
-  
-
-  flex : 0 0 50%;
+  flex: 0 0 calc(50% - 25px);
   max-width: 50%;
+}
+
+
+
+.banner img{
+  width: 100%;
+  object-fit: cover;
 }
 
 
@@ -1359,20 +1317,19 @@ margin-bottom: 15px;
 /* about-follow-fit- */
 
 .about-follow-fit-wrapper{
-  margin-top: 60px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .about-follow-fit-info,
 .about-follow-fit-banner{
-  flex : 0 0 50%;
+  flex : 0 0 calc(50% - 25px);
   max-width: 50%;
 }
 
-.about-follow-fit-info{
-  padding-left: 50px;
-}
+
 
 
 .about-follow-fit-info h2{
@@ -1385,20 +1342,18 @@ margin-bottom: 10px;
 
 .experience-grow-creativity-wrapper{
 
-  margin-top: 90px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .experience-grow-creativity-info,
 .experience-grow-creativity-banner{
-  flex : 0 0 50%;
+  flex : 0 0 calc(50% - 25px);
   max-width: 50%;
 }
 
-.experience-grow-creativity-banner{
-  padding-left: 58px;
-}
 
 .experience-grow-creativity-info h2{
   margin-bottom: 10px;
@@ -1425,22 +1380,24 @@ font-weight: bold;
 .influencer-review-row{
   display: flex;
   justify-content: space-between;
+  /* background-color: blue; */
 
 }
 
 .review-row-1-review1
 {
-  flex: 0 0 calc(52% - 30px);
-  max-width: 52%;
+  flex: 0 0 calc(50% - 15px);
+  max-width: 50%;
+  /* background-color: red; */
+  
 }
 .review-row-1-review2
 
 {
-  flex: 0 0 calc(48% - 30px);
-  max-width: 48%;
+  flex: 0 0 calc(50% - 15px);
+  max-width: 50%;
+  
 }
-/*  */
-
 
 .influencers-reviewer-name{
 
@@ -1460,6 +1417,7 @@ font-weight: bold;
 .collapsible-div{
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .collapsible-div h4{
@@ -1475,11 +1433,10 @@ font-weight: bold;
 }
 
 .questions-list{
-  width: 1140px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   border-radius: 10px;
-  padding: 30px 30px;
+  padding: 10px 30px;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -1515,10 +1472,10 @@ font-weight: bold;
   content: '\002B';
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: -11px;
   color:#FC3990;
-  width: 15px;
-  height: 15px;
+  font-size: 25px;
+  cursor: pointer;
  
 }
 
@@ -1547,27 +1504,29 @@ font-weight: bold;
                                             Brands & Agencies start
 ----------------------------------------------------------------------------------------------------------------------- */
 .influencer-marketing-campaigns-wrapper{
-  margin-top: 99px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
 }
 
 .influencer-marketing-campaigns-info
 {
-  flex:0 0 54%;
-  max-width: 54%;
+  flex:0 0 calc(50% - 25px);
+  max-width: 50%;
   
 }
 
 
 
 .influencer-marketing-campaigns-banner{
-  flex:0 0 46%;
-  max-width: 46%;
-  
+  flex:0 0 calc(50% - 25px);
+  max-width: 50%;
+ 
 }
 .influencer-marketing-campaigns-info{
-  padding-right: 114px;
+  /* padding-right: 114px; */
 }
 
 .influencer-marketing-campaigns-info h2{
@@ -1605,7 +1564,7 @@ display: inline-block;
 
 
 .acquire-survey-market-track-wrapper{
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .acquire-survey-market-track-banner{
@@ -1675,15 +1634,16 @@ display: inline-block;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .fingertips-hottest-platforms-info,
 .fingertips-hottest-platforms-banner{
-  flex: 0 0 50%;
+  flex: 0 0 calc(50% - 25px);
   max-width: 50%;
 }
 .fingertips-hottest-platforms-info{
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 .fingertips-hottest-platforms-info h2{
@@ -1716,7 +1676,7 @@ margin-bottom: 40px;
   width: 57px;
   height: 80px;
   position: absolute;
-  left:53%;
+  left:52%;
   }
 
   .fingertips-insta::before{
@@ -1724,22 +1684,23 @@ margin-bottom: 40px;
   width: 80px;
   height: 80px;
   position: absolute;
-  left:53%;
+  left:52%;
   }
 
   .wave-goodbye-wrapper{
-    margin-top: 92px ;
+    margin-top: 80px ;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .wave-goodbye-info{
-    flex: 0 0 54%;
-    max-width: 54%;
+    flex: 0 0 calc(50% - 25px);
+    max-width: 50%;
   }
   .wave-goodbye-banner{
-    flex: 0 0 46%;
-    max-width: 46%;
+    flex: 0 0 calc(50% - 25px);
+    max-width: 50%;
   }
 
   .wave-goodbye-info{
@@ -1760,17 +1721,18 @@ margin-bottom: 40px;
     margin-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .run-campaigns-info,
   .run-campaigns-banner{
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 25px);
     max-width: 50%;
   }
  
 
   .run-campaigns-info{
-    padding-left: 54px;
+    /* padding-left: 54px; */
   }
   .run-campaigns-info h2{
 
@@ -1808,7 +1770,7 @@ margin-bottom: 40px;
   }
   
   .heartbeat-free-trial-wrapper{
-    padding:50px 200px;
+    padding:50px 0;
   }
  
   .heartbeat-free-trial-wrapper h2{
@@ -1819,9 +1781,11 @@ margin-bottom: 40px;
   .heartbeat-free-trial-wrapper-para1
     {
     color: #FFFFFF;
-  
+    max-width: 686px;
+    margin: 0 auto;
     margin-bottom: 20px;
-    /* text-align: center; */
+
+
   }
 
   .heartbeat-free-trial-wrapper a{
@@ -1842,10 +1806,8 @@ margin-bottom: 40px;
 
   
     color: #FFFFFF;
-    
-    text-align: center;
-
-    /* background-color: red; */
+    max-width: 410px;
+    margin: 0 auto;
 
 
   }
@@ -1883,21 +1845,22 @@ height: 15px;
     margin-bottom: 10px;
   }
   .lose-money-influencer-wrapper{
-    margin-top: 59px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
   }
 
   .lose-money-influencer-info{
-    flex:0 0 46%;
-    max-width: 46%;
+    flex:0 0 calc(50% - 25px);
+    max-width: 50%;
   }
   .lose-money-influencer-banner{
     
 
-    flex:0 0 54%;
-    max-width: 54%;
+    flex:0 0 calc(50% - 25px);
+    max-width: 50%;
   }
 
   .lose-money-influencer-info h2{
@@ -1905,7 +1868,7 @@ height: 15px;
 
   }
   .lose-money-influencer-banner{
-    padding-left: 91px;
+    /* padding-left: 50px; */
   }
  
   .gain-consumer-insights-wrapper{
@@ -1913,16 +1876,17 @@ height: 15px;
     margin-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
   }
 
   .gain-consumer-insights-info{
-    flex : 0 0 50%;
+    flex : 0 0 calc(50% - 25px);
     max-width: 50%;
   }
   .gain-consumer-insights-banner{
    
-    flex : 0 0 50%;
+    flex : 0 0 calc(50% - 25px);
     max-width: 50%;
   }
 
@@ -1933,7 +1897,7 @@ height: 15px;
   }
 
  .gain-consumer-insights-info{
-   padding-left: 50px;
+   /* padding-left: 50px; */
  }
   
 
@@ -1942,20 +1906,22 @@ height: 15px;
     margin-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
   }
 
   .ugc-info{
-    flex : 0 0 46%;
-    max-width: 46%;
+    flex : 0 0 calc(50% - 25px);
+    max-width: 50%;
+    /* background-color: red; */
   }
   .ugc-banner{
-    flex : 0 0 54%;
-    max-width: 54%;
+    flex : 0 0 calc(50% - 25px);
+    max-width: 50%;
   }
 
  .ugc-banner{
-   padding-left: 86px;
+   /* padding-left: 86px; */
  }
 
   .ugc h2{
@@ -1968,16 +1934,17 @@ height: 15px;
     margin-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   
   }
   
   .hands-on-analytics-info,
   .hands-on-analytics-banner{
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 25px);
     max-width: 50%;
   }
   .hands-on-analytics-info{
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
   
   .hands-on-analytics-info ul  {
@@ -2019,22 +1986,23 @@ height: 15px;
     margin-top: 80px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   
   }
   
   .influencer-technology-info{
     
-    flex: 0 0 54%;
-    max-width: 54%;
+    flex: 0 0 calc(50% - 25px);
+    max-width: 50%;
   }
   .influencer-technology-banner{
 
-    flex: 0 0 46%;
-    max-width: 46%;
+    flex: 0 0 calc(50% - 25px);
+    max-width: 50%;
   }
   
   .influencer-technology-info{
-    padding-right: 50px;
+    /* padding-right: 50px; */
   }
  
   .influencer-technology-info ul  {
@@ -2076,7 +2044,7 @@ height: 15px;
  .flexible-pricing .container{
    max-width: 100%;
    text-align: center;
-   margin-top: 60px;
+   margin-top: 80px;
    
  }
 
@@ -2085,7 +2053,7 @@ height: 15px;
  }
 
  .flexible-pricing-wrapper p{
-   /* max-width: 570px; */
+   max-width: 570px;
    margin: 0 auto;
    margin-bottom: 30px;
  }
@@ -2093,13 +2061,14 @@ height: 15px;
  .premium-plans{
    margin-top: 30px;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    flex-wrap: wrap;
+  
  }
 
  .premium-plan{
-   flex: 0 0 30%;
-   max-width: 30%;
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: 33.333%;
  }
 
  .premium-plan{
@@ -2107,7 +2076,6 @@ height: 15px;
   box-shadow: 0px 3px 15px #00000029;
   border-radius: 20px;
   padding: 30px 20px 30px 30px;
-  max-width: 360px;
   position: relative;
  }
 
@@ -2190,10 +2158,6 @@ height: 15px;
     left:30px;
  }
 
- .standard,.pro{
-   margin-right: 30px;
- }
-
 
  
  .premium-plans .pro ul li::before 
@@ -2211,7 +2175,7 @@ height: 15px;
 
 
  .case-studies-wrapper{
-   margin-top: 60px;
+   margin-top: 80px;
  }
  .case-studies-wrapper h2{
    text-align: center;
@@ -2363,26 +2327,24 @@ height: 15px;
                                             Full Service Campaigns start
 ----------------------------------------------------------------------------------------------------------------------- */
 .full-service-camp-wrapper{
-  margin-top: 99px;
+  margin-top:80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.full-service-camp-info
+.full-service-camp-info,
+.full-service-camp-banner
 {
   
-  flex:0 0 46%;
-  max-width: 46%;
+  flex:0 0 calc(50% - 25px);
+  max-width: 50%;
 }
 
 
+
 .full-service-camp-banner{
- 
-  flex:0 0 54%;
-  max-width: 54%;
-}
-.full-service-camp-banner{
-  padding-left: 53px;
+  /* padding-left: 53px; */
 }
 
 
@@ -2425,27 +2387,22 @@ display: inline-block;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.run-camp-info{
-  flex: 0 0 54%;
-  max-width: 54%;
+.run-camp-info,
+.run-camp-banner{
+  flex: 0 0 calc(50% - 25px);
+  max-width: 50%;
 
   
 }
-.run-camp-banner{
-  flex: 0 0 46%;
-  max-width: 46%;
-}
-
 
 .run-camp-banner img{
 height: 430px;
 }
 
-.run-camp-info{
-  padding-left:50px;
-}
+
 .run-camp-info h2{
   margin-bottom: 10px;
 }
@@ -2462,13 +2419,11 @@ height: 430px;
 
 .run-camp-info ul li h2{
   margin-bottom: 10px;
-  /* font:normal normal bold 30px/37px Proxima Nova; */
   
 }
 
 .run-camp-info ul li p{
-  /* width: 499px;
-  height: 84px;   */
+ 
   margin-bottom: 20px; 
 }
 
@@ -2479,18 +2434,16 @@ height: 430px;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
 }
 
 .campaign-strategist-info,
 .campaign-strategist-banner{
-  flex: 0 0 50%;
+  flex: 0 0 calc(50% - 25px);
   max-width: 50%;
 }
 
-.campaign-strategist-info{
-  padding-right: 69px;
-}
 .campaign-strategist-banner{
   background-color: #22C6F9;
 }
@@ -2535,22 +2488,17 @@ height: 430px;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
 }
 
-.marketing-channels-info{
-  
-  flex: 0 0 54%;
-  max-width: 54%;
-}
+.marketing-channels-info,
 .marketing-channels-banner{
-  flex: 0 0 46%;
-  max-width: 46%;
+  
+  flex: 0 0 calc(50% - 25px);
+  max-width: 50%;
+}
 
-}
-.marketing-channels-info{
-  padding-left: 50px;
-}
 
 .marketing-channels-info ul  {
   list-style: none;
@@ -2583,18 +2531,16 @@ height: 430px;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .unparalleled-tracking-info,
 .unparalleled-tracking-banner{
 
-  flex : 0 0 50%;
+  flex : 0 0 calc(50% - 25px);
   max-width: 50%;
 }
 
-.unparalleled-tracking-info{
-  padding-right: 71px;
-}
 
 .unparalleled-tracking-info h2{
   margin-bottom: 10px;
@@ -2605,21 +2551,16 @@ height: 430px;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.assure-brand-info{
-  flex : 0 0 54%;
-  max-width: 54%;
-}
+.assure-brand-info,
 .assure-brand-banner{
-
-  flex : 0 0 46%;
-  max-width: 46%;
+  flex : 0 0 calc(50% - 25px);
+  max-width: 50%;
 }
 
-.assure-brand-info{
-  padding-left:50px;
-}
+
 
 .assure-brand-info h2{
   margin-bottom: 10px;
@@ -2627,7 +2568,6 @@ height: 430px;
 }
 
 .is-full-service-right{
-  background-color: #CDEFF6;
 }
 .is-full-service-right .container{
   max-width: 100%;
@@ -2635,22 +2575,18 @@ height: 430px;
 }
 
 .is-full-service-right-wrapper{
-  margin-top: 99px;
+  margin-top: 80px;
   display: flex;
-  align-items: center;
 }
 
 .is-full-service-right-info
 {
+  padding: 50px 0;
   flex:0 0 50%;
   max-width: 50%;
-
-  
-}
-
-.is-full-service-right-info{
-  padding-left:113px;
+  background-color: #CDEFF6;
   padding-right: 28px;
+  padding-left: 100px;
 }
 
 .is-full-service-right-banner{
@@ -2698,21 +2634,15 @@ display: inline-block;
   margin-top: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.our-guarantee-info{
-  flex : 0 0 54%;
-  max-width: 54%;
-}
+.our-guarantee-info,
 .our-guarantee-banner{
-
-  flex : 0 0 46%;
-  max-width: 46%;
+  flex : 0 0 calc(50% - 25px);
+  max-width: 50%;
 }
 
-.our-guarantee-info{
-  padding-right:78px;
-}
 
 .our-guarantee-info h2{
   margin-bottom: 10px;
@@ -2731,19 +2661,17 @@ display: inline-block;
 .good-company-banners{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   
 }
 
 .good-company-banner1,
 .good-company-banner2{
-  flex: 0 0 50%;
+  flex: 0 0 calc(50% - 25px);
   max-width: 50%;
 }
 
-.good-company-banner2{
-  padding-left: 30px;
-}
-  
+
 
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -3120,13 +3048,15 @@ display: inline-block;
 
   .labels{
     flex-wrap: wrap;
+    
   }
   
 
   .label-title{
     flex:0 0 100%;
-    max-width: 100%;
-   
+    max-width: 100%;   
+    /* background-color: red; */
+    margin-top: 15px;
   }
   
   
@@ -3134,6 +3064,7 @@ display: inline-block;
     
     flex: 0 0 100%;
     max-width: 100%;
+    margin-top:-3px;
   }
 
   .every-influencers-voice-wrapper,
@@ -3273,9 +3204,7 @@ display: inline-block;
   object-fit: cover;
 }
 
-.influencer-review-row{
-  padding: 0 50px;
-}
+
 
 .review-row-1-review1,
 .review-row-2-review1,
@@ -3285,7 +3214,7 @@ display: inline-block;
 .review-row-6-review1
 
 {
-  flex: 0 0 calc(50% - 20px);
+  flex: 0 0 calc(50% - 15px);
   max-width: 50%;
   margin: 0;
   padding: 0;
@@ -3300,7 +3229,7 @@ display: inline-block;
 
 {
 
-  flex: 0 0 calc(50% - 20px);
+  flex: 0 0 calc(50% - 15px);
   max-width: 50%;
   margin: 0;
   padding: 0;
@@ -3314,9 +3243,6 @@ display: inline-block;
   padding: 0 50px;
 }
 
-.influencer-review-row{
-  padding: 0 35px;
-}
 
 .influencer-marketing-campaigns-wrapper{
   flex-wrap: wrap;
@@ -3541,6 +3467,12 @@ display: inline-block;
   text-align: justify;
 }
 
+.flexible-pricing-wrapper p{
+  max-width: 95%;
+  margin: 0 0;
+  margin-bottom: 30px;
+}
+
 }
 
 
@@ -3559,6 +3491,9 @@ display: inline-block;
   
   .contactus {
     padding: 0;
+  }
+  .contact-title{
+    margin-bottom: 20px;
   }
   .contact-img{
     flex: 0 0 100%;
@@ -3671,6 +3606,8 @@ display: inline-block;
 
   .heartbeat-team-slide p{
     margin: 0;
+    font: normal normal normal 15px/22px Lato;
+    
   }
   
 
@@ -3978,6 +3915,11 @@ display: inline-block;
 
 
 @media screen and (max-width : 550px) {
+
+  .home-info p{
+    margin: 0 auto;
+  
+  }
 
   .blog-wrapper{
     flex-wrap: wrap;
