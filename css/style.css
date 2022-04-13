@@ -26,7 +26,7 @@ h2{
 
 h3{
   font: normal normal 900 18px/22px Lato;
-  line-height: 2.3rem
+  line-height: 1.5rem
 
 }
 
@@ -826,8 +826,7 @@ padding-bottom: 250px;
   background: #FC3990 0% 0% no-repeat padding-box;    
   max-width: 100%;
   text-align: center;
-  padding-top:50px ;
-  padding-bottom: 50px;
+  padding:50px 0 ;
  }
 
  .career-wrapper h2{
@@ -978,7 +977,7 @@ padding-bottom: 250px;
   border-radius: 10px;
   color: #FFFFFF;
 
-  flex: 0 0 calc(33.333% - 30px);
+  flex: 0 0 calc(33.333% - 15px);
   max-width: 33.333%;
 
 
@@ -1474,7 +1473,7 @@ font-weight: bold;
   float: right;
   margin-left: -11px;
   color:#FC3990;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
  
 }

@@ -21,11 +21,47 @@ $(function(){
           // $(this).addClass('active'); $(this).parents('li').addClass('active');
           $(this).css({
             "color":"#FC3990",
-            "border-bottom": "2px solid #FC3990"
+            
           })
       }
-  });
-});
+
+     
+      if(window.location.pathname === '/contact.html'){
+        console.log("hii")
+        console.log(this)
+        $('.nav-contact').css({
+          "color":"#FFFFFF",
+          "background":"#FC3990"
+
+        })
+
+        $('.nav-contact').hover(function(){
+          $(this).css({
+           
+
+          "color": "#FFFFFF",
+          "background":"#22C6F9"
+
+          
+          });
+        }, 
+        
+        function(){
+        $(this).css({
+         
+          "color":"#FFFFFF",
+          "background":"#FC3990"
+
+          
+        });
+      })
+    }
+  })
+})
+    
+  
+
+
 
 
 
