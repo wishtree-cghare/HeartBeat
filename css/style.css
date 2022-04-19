@@ -390,12 +390,14 @@ img {
 }
 
 /*------advantage-tiktok------*/
+
 .tiktok .container {
   max-width: 960px;
   padding: 50px 0;
   text-align: center;
 }
-.tiktok h3 {
+
+.tiktok h2 {
   font: normal normal bold 30px/37px Lato;
   margin-bottom: 7px;
 }
@@ -407,26 +409,26 @@ img {
   font-size: 15px;
 }
 
-.discoverVoice{
- 
+.discoverVoice
+{ 
   overflow: hidden;
   padding-top: 80px;
   padding-bottom: 220px;
 
 }
+
 .discoverVoice-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .discover-banner,
 .discover-info {
 
   flex: 0 0 calc(50% - 25px);
   max-width: 50%;
 }
-
-
 
 .discover-content h2 {
   color: #050605;
@@ -437,9 +439,6 @@ img {
 .discover-info p{
   margin-top: 27px;
 }
-
-
-
 
 .discover-info a {
   color: #fff;
@@ -1112,9 +1111,8 @@ font-size: 15px;
   border: 0;
   outline: 0;
   border-bottom: 2px solid #212121;
-  
-
   }
+
  label{
    font-weight: bold;
  }
@@ -3692,7 +3690,6 @@ display: inline-block;
     margin:0 auto;
     margin-top: 40px;
     /* background-color: red; */
-  
   }
 
   .instagram-title p{
@@ -3827,16 +3824,10 @@ display: inline-block;
     padding:0 10px;
   }
 
-  .tiktok-content .part2 {
-    padding: 0 10px;
-   
-  }
-  .tiktok p{
-   padding: 0 10px;
-  }
 
-  .creators p{
-  padding: 0 10px;  }
+ 
+
+ 
 
   .home-wrapper .head1{
     padding:0;
@@ -4043,6 +4034,17 @@ display: inline-block;
   
 
 } 
+.home-info p{
+  /* margin-bottom: 30px; */
+  max-width: 100%;
+  font: normal normal normal 18px/30px Lato;
+  line-height: 30px;
+
+}
+.tiktok p{
+  max-width: 100%;
+}
+
 
 .compaigns-imges img{
 
@@ -4068,16 +4070,19 @@ display: inline-block;
 }
 
 
-.creators h3 {
+
+.creators h2 {
   
   text-align: left;
-  padding: 0 15px ;
+ 
 
  
 }
-.creators p {
+.creators p,
+.instagram-title p {
   text-align: left;
-  padding: 0 15px ;
+  padding: 0;
+ 
 }
 
 .compaigns-info h3{
@@ -4089,6 +4094,13 @@ display: inline-block;
 .compaigns-info p{
   text-align: left;
   
+}
+
+.discover-info h2{
+  margin-bottom: 16px;
+}
+.discover-info p{
+  margin-top: 0;
 }
 
 .tiktok .container {

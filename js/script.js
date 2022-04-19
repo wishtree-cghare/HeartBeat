@@ -9,7 +9,7 @@ const sidebar = document.querySelector("#sidebar");
 
 $('.header-tabs').responsiveTabs({
     startCollapsed: 'accordion',
-    // animation: 'slide'
+   
   });
 
 
@@ -18,17 +18,13 @@ $('.header-tabs').responsiveTabs({
 $(function(){
   $('.link').each(function(){
       if ($(this).prop('href') == window.location.href) {
-          // $(this).addClass('active'); $(this).parents('li').addClass('active');
           $(this).css({
             "color":"#FC3990",
             
           })
       }
 
-     
       if(window.location.pathname === '/contact.html'){
-        console.log("hii")
-        console.log(this)
         $('.nav-contact').css({
           "color":"#FFFFFF",
           "background":"#FC3990"
@@ -59,12 +55,7 @@ $(function(){
   })
 })
     
-  
-
-
-
-
-
+ 
 // collapsible on plus minus
 var coll = document.getElementsByClassName("collapsible-div");
 var i;
@@ -82,6 +73,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 // Slide the contents
+
 $(function () {
   $("#features").owlCarousel({
     items:3,
@@ -112,7 +104,6 @@ $(function () {
     dots: false,
     navText: [
       "<img src='img/down-arrow.jpg'>",
-
       "<img src='img/up-arrow.jpg'>",
     ],
     

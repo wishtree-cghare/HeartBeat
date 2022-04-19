@@ -12,6 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+    <link type="text/css" rel="stylesheet" href="css/responsive-tabs/jquery.responsiveTabs.min.js" />
+
   <!--font awesome  -->
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
@@ -51,6 +53,82 @@
 
         </div>
     </nav>
+      <!-- resolution navbar -->
+  <nav class="resolution-nav">
+    <div class="resolution-navbar">
+
+
+      <div class="main-title">
+        <h1>Influencers | Brands & Agencies</h1>
+
+      </div>
+
+      <div class="resolution-nav-logo">
+
+        <img src="img/HeartBeat-Logo(2).jpg" class="Group-22">
+
+      </div>
+
+      <!-- sidebar -->
+
+      <aside class="sidebar" id="sidebar">
+        <div>
+          <button class="close-btn" id="close-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+
+          <!-- nav links -->
+
+          <ul class="sidebar-links">
+            <li>
+              <a href="index.html" class="sidebar-home link">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li><a href="about.html" class="sidebar-about link">About</a></li>
+            <li><a href="influencers.html" class="sidebar-influencers link">Influencers</a></li>
+            <li><a href="brands&agencies.html" class="sidebar-brands-agencies link">Brands & Agencies</a></li>
+            <li><a href="fullservicecampaigns.html" class="sidebar-full-service-campaigns link">Full service
+                campaigns</a></li>
+            <li><a href="blog.html" class="nav-blog link">Blog</a></li>
+            <li><a href="contact.html" class="sidebar-contact sidebar-contact-btn link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+  </nav>
+
+
+  <!-- bottom navbar -->
+
+  <div class="bottom-nav">
+
+
+    <ul class="bottom-nav-links" id="bottom-nav-links">
+      <li><a href="index.html" class="bottom-nav-home link">
+          <img src="img/home (5).jpg" alt="home">
+        </a></li>
+      <div class="line"></div>
+
+
+      <li><a href="contact.html" class="bottom-nav-location">
+          <img src="img/location.jpg" alt="location">
+        </a></li>
+      <div class="line"></div>
+
+      <li><a href="tel:12345678" class="bottom-nav-phone">
+          <img src="img/phone-call.jpg" alt="phone">
+        </a></li>
+      <div class="line"></div>
+
+      <li id="nav-btn"><a class="bottom-nav-union">
+          <img src="img/Union 6.jpg" alt="union">
+        </a></li>
+
+    </ul>
+  </div>
     <!-- end of navbar -->
 
            <!-- section : See The Latest From Our Blog -->
@@ -81,7 +159,7 @@
       <div class="container contact-wrapper">
        
           <div class="contact-img">
-              <img src="img/Mask Group 4.jpg">
+              <img src="img/Mask Group 4.jpg" alt="contact">
           </div>
           <div class="contact-form">
             <div class="contact-data">
@@ -150,62 +228,67 @@
     
     
         <section class="footer">
-            <div class="container footer-wrapper">
-                <div class="footer-loGo">
-                  <img src="img/Group 22.jpg" class="footer-Group-22">
-                  <div class="insta-linkedIn">
-                    <a href="#"><img src="img/linkedin.jpg"></a>
-                    <a href="#"><img src="img/instagram.jpg"></a>
-                  
-                </div>
-                </div>
-                <div class="footer-link ambassador">
-                <h4 class="footer-ambassadoers-title">Ambassadors</h4>
-                <ul class="footer-ul-links">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Influencers</li>
-                  <li>Brands & Agencies</li>
-                  <li>Blogs</li>
-                </ul>
+          <div class="container footer-wrapper">
+            <div class="footer-loGo">
+              <img src="img/Group 22.jpg" class="footer-Group-22" alt="logo">
+              <div class="insta-linkedIn">
+                <a href="#"><img src="img/linkedin.jpg" alt="linkedin"></a>
+                <a href="#"><img src="img/instagram.jpg" alt="instagram"></a>
+      
               </div>
-          
-              <div  class="footer-link">
-                <h4 class="footer-brands-title">Brands</h4>
-                <ul class="footer-ul-links">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Influencers</li>
-                  <li>Brands & Agencies</li>
-                  <li>Blogs</li>
-                </ul>
-              </div>
-          
-              <div  class="footer-link">
-                <h4 class="footer-quick-links">Quick Links</h4>
-                <ul class="footer-ul-links">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Influencers</li>
-                  <li>Brands & Agencies</li>
-                  <li>Blogs</li>
-                </ul>
-          
-              </div>
-          
-              </div>
-                 
-          
-             
             </div>
-          
-            <div class="footer-copyright">
-              <p>Copyright (c) 2021. Heartbeat. All Rights Reserved.</p>
+            <div class="footer-link footer-ambassador">
+              <h4 class="footer-ambassadoers-title">Ambassadors</h4>
+              <ul class="footer-ul-links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Influencers</li>
+                <li>Brands & Agencies</li>
+                <li>Blogs</li>
+              </ul>
             </div>
-          </section>
+      
+            <div class="footer-link footer-brands">
+              <h4 class="footer-brands-title">Brands</h4>
+              <ul class="footer-ul-links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Influencers</li>
+                <li>Brands & Agencies</li>
+                <li>Blogs</li>
+              </ul>
+            </div>
+      
+            <div class="footer-link footer-quick-links">
+              <h4 class="footer-quick-links-title">Quick Links</h4>
+              <ul class="footer-ul-links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Influencers</li>
+                <li>Brands & Agencies</li>
+                <li>Blogs</li>
+              </ul>
+      
+            </div>
+      
+          </div>
+      
+      
+      
+          </div>
+      
+          <div class="footer-copyright">
+            <p>Copyright (c) 2021. Heartbeat. All Rights Reserved.</p>
+          </div>
+    
+        </section>
     
           <!-- Jquery -->
     <script src="js/jquery.js"></script>
+    
+    <!-- Responsive Tabs -->
+    <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
     
     <!-- custom javascript file -->
     <script src="js/script.js"></script>
