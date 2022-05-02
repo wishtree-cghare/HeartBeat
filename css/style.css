@@ -20,12 +20,12 @@ h2{
 
   font: normal normal bold 30px/36px Lato;
   opacity: 1;
-  line-height: 2.3rem
+  /* line-height: 2.3rem */
 }
 
 h3{
   font: normal normal 900 18px/22px Lato;
-  line-height: 1.5rem
+  /* line-height: 1.5rem */
 }
 
 p{
@@ -4472,4 +4472,12 @@ button{
   border: 2px solid #FFFFFF;
   background-color: #FC3990;
   color: #FFFFFF;
+}
+
+.bottom-nav-links img{
+  transition: all 0.5s;
+}
+
+.bottom-nav-links img:hover{
+  transform: translateY(-50%);
 }
