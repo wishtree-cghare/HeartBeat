@@ -1113,7 +1113,7 @@ font-size: 15px;
  .contact-form{
   background: #FFFFFF;
   padding: 40px 30px;
- 
+  
  }
 
 
@@ -3542,6 +3542,12 @@ display: inline-block;
   .contactus {
     padding: 0;
   }
+
+  .contact-form{
+   
+    padding: 40px 0;
+    
+   }
   .contact-title{
     margin-bottom: 20px;
   }
@@ -3551,9 +3557,9 @@ display: inline-block;
   }
   .contact-form{
     flex: 0 0 100%;
-    max-width: 100%
-  }
+    max-width: 100%;
 
+  }
   .feature {
    
     display: none;
