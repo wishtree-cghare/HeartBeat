@@ -21,13 +21,11 @@ h2{
   font: normal normal bold 30px/36px Lato;
   opacity: 1;
   line-height: 2.3rem
-
 }
 
 h3{
   font: normal normal 900 18px/22px Lato;
   line-height: 1.5rem
-
 }
 
 p{
@@ -41,6 +39,9 @@ img {
   max-width: 100%;
 }
 
+a{
+  display: inline-block;
+}
 
 /* navbar */
 
@@ -67,8 +68,9 @@ img {
   align-items: center;
   justify-content: flex-end;
   margin-top: 31px;
- 
+
 }
+
 
 .nav-links li {
   list-style: none;
@@ -80,7 +82,7 @@ img {
 }
 
 .nav-links li a{
-  transition: 400ms;
+  transition: all 400ms;
   
 }
 .nav-links li a:hover {
@@ -88,11 +90,18 @@ img {
    
 }
 
+.nav-links .nav-contact-btn{
+  transition: all 400ms;
+}
+
 .nav-links .nav-contact-btn:hover{
   background-color: #FC3990;
   color: #FFFFFF;
 
 }
+
+
+
 .nav-links a {
   text-decoration: none;
   color: #050605;
@@ -120,6 +129,7 @@ img {
 }
 
 
+
 /* active nav link */
 
 
@@ -127,7 +137,7 @@ img {
 .nav-links .active{
   
   color: #FC3990;
-  /* border-bottom: 3px solid #FC3990;   */
+  border-bottom: 3px solid #FC3990;  
 }
 
 
@@ -281,8 +291,8 @@ img {
   background: #22C6F9 0% 0% no-repeat padding-box;
   margin-right: 10px;
 }
-.button1,
-.button2{
+.home-info .button1,
+.home-info .button2{
   text-decoration: none;
   color: #FFFFFF;
   font-weight: bold;
@@ -306,6 +316,7 @@ img {
 .creators .container {
   max-width: 960px;
   padding: 50px 0;
+  
 }
 .creators h2 {
   font-weight: 900;
@@ -324,31 +335,63 @@ img {
 }
 /*-----compaigns---------*/
 .compaigns .container {
-  max-width: 960px;
+  max-width: 730px;
   text-align: center;
+
 }
 .compaigns .compaigns-info {
   display: flex;
-  max-width: 100%;
   margin-top: 22px;
-  /* padding-top: 20px; */
+  
+  
+  
 }
-.compaigns .compaigns-info > div {
-  padding-right: 30px;
-}
+
 .compaigns h3 {
   font-size: 20px;
   font-weight: bold;
   line-height: 24px;
 }
 
-.compaigns-info h3{
 
-  margin-bottom: 7px;
-  
+.turkey-platform{
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-right: 10px;
+ 
+}
+
+.turkey-platform p{
+  max-width: 314px;
+}
+.unparalled-analytics{
+ flex: 0 0 50%;
+ max-width: 50%;
 
 }
 
+.turkey-platform h3{
+  max-width: 278px;
+  margin: 0 auto;
+}
+
+.unparalled-analytics h3{
+  max-width: 374px;
+  margin: 0 auto;
+
+  
+}
+
+.compaigns-info h3{
+
+  margin-bottom: 10px;
+
+}
+
+
+.unparalled-analytics p{
+  max-width: 346px;
+}
 .compaigns-info-link{
   color: #22C6F9;
   display: inline-block;
@@ -367,6 +410,7 @@ img {
 
 .compaigns-info p{
   font: normal normal normal 15px/22px Lato;
+  
 }
 
 .compaigns-imges .group289,
@@ -378,22 +422,26 @@ img {
   
 }
 
+
+
 .union5{
-  width: 250px;
+  max-width: 250px;
   margin-top:38px;
+  
 }
 
 .compaigns-imges{
   margin-top: 38px;
   display: flex;
   justify-content: center;
+ 
 }
 
 /*------advantage-tiktok------*/
 
 .tiktok .container {
   max-width: 960px;
-  padding: 50px 0;
+  padding: 50px 15px;
   text-align: center;
 }
 
@@ -1126,6 +1174,7 @@ font-size: 15px;
   margin-top:30px;
   font-weight: 900;
   padding: 14px 20px;
+  cursor: pointer;
 
  }
 
@@ -1462,8 +1511,6 @@ font-weight: bold;
   height: 15px;
 
 }
-
-
 
 .collapsible-div:after {
   content: '\002B';
@@ -2894,7 +2941,7 @@ display: inline-block;
       flex-wrap: wrap;
       max-width: 100%;
       text-align: center;
-      margin-top: 5px;
+     
     }
     
     .resolution-nav-logo{
@@ -2911,6 +2958,7 @@ display: inline-block;
       background: #E6F7FB;
       text-align: center;
       margin-bottom: 40px;
+      padding: 10px 20px;
     }
   
     .bottom-nav .bottom-nav-links{
@@ -3005,7 +3053,12 @@ display: inline-block;
     flex: 0 0 90%;
     max-width: 90%;
   }
-
+  .home-info p{
+    /* margin-bottom: 30px; */
+    max-width: 100%;
+    
+  
+  }
  
   .head2{
     display: block;
@@ -3513,18 +3566,28 @@ display: inline-block;
     justify-content: space-between;
     }
 
+ 
   .features-wrapper,
   .heartbeat-team-wrapper-responsive
   
   {
+   
     position: relative;
+   
+    padding: 0 30px;
   }
+
+
+  .owl-item{
+    padding: 0 20px;
+  }
+
   .feature-silde,
   .heartbeat-team-slide
   
   {
     display: inline-block;
-    padding:0 20px;
+    /* padding:0 20px; */
 
     
   }
@@ -3532,6 +3595,8 @@ display: inline-block;
   .heartbeat-team-slide{
     text-align: center;
   }
+
+  
   .features-wrapper button,
   .heartbeat-team-wrapper-responsive button
   {
@@ -3548,7 +3613,7 @@ display: inline-block;
     
   }
 
- 
+
   .owl-theme .owl-nav [class*=owl-] {
     background: transparent;
     display: inline;
@@ -3556,22 +3621,26 @@ display: inline-block;
   .owl-theme .owl-nav [class*=owl-prev] {
     background: transparent;
     position: absolute;
-    top: -5px;
-    left: -1%;
+    top:-9px;
+    left:-2%;
   }
   .owl-theme .owl-nav [class*=owl-next] {
     background: transparent;
     position: absolute;
-    top: -5px;
-    right: -1%;
+    top: -9px;
+    right: -2%;
   }
   .owl-theme .owl-nav [class*=owl-]:hover {
       background: none;
       color: #212226;
   }
 
-  .feature-silde{
-    margin: 0 auto;
+
+
+  .feature-silde img{
+    height: 20px;
+    width: auto;
+    
   }
 
   .owl-theme .owl-nav [class*=owl-] {
@@ -3803,7 +3872,18 @@ display: inline-block;
     margin-bottom: 50px;
   }
 
+  .turkey-platform h3,
+  .unparalled-analytics h3,
+  .turkey-platform p,
+  .unparalled-analytics p
+  {
+    max-width: 100%;
+  }
  
+  .turkey-platform h3,
+  .unparalled-analytics h3{
+    margin-bottom: 10px;
+  }
 
   .best-brand-influencer-content-part1-images {
     flex-wrap: wrap;
@@ -3954,7 +4034,6 @@ display: inline-block;
   .experience-grow-creativity-wrapper,
   .frequetly-asked-questions-wrapper,
   .blog-wrapper
-
   {
     padding: 0 15px;
   }
@@ -4006,9 +4085,69 @@ display: inline-block;
  
 }
 
+@media screen and (max-width : 550px) {
+
+.home-info h2{
+  font-size: 30px; 
+}
+
+.brands h2,
+.tiktok-wrapper h2,
+.discover-info h2,
+.best-brand-influencer-content h2,
+.tiktok-content h2,
+.instagram-content h2,
+.insta-featured h2,
+.home-blog-wrapper h2,
+.share-the-love-info h2,
+.every-influencers-voice-info h2,
+.small-influencers-info h2,
+.heartbeat-team h2,
+.career-wrapper h2,
+.ambassadors-reviewes-wrapper h2,
+.blog-wrapper h2,
+.become-brand-ambassador-info h2,
+.post-tiktok-insta-info h2,
+.about-follow-fit-info h2,
+.experience-grow-creativity-info h2,
+.frequetly-asked-questions-wrapper h2,
+.influencer-marketing-campaigns-info h2,
+.fingertips-hottest-platforms-info h2,
+.wave-goodbye-info h2,
+.run-campaigns-info h2
+.heartbeat-free-trial-wrapper h2,
+.lose-money-influencer-info h2,
+.gain-consumer-insights-info h2,
+.ugc-info h2,
+.hands-on-analytics-info h2,
+.influencer-technology-info h2,
+.flexible-pricing-wrapper h2,
+.standard h2,
+.pro h2,
+.full-service h2,
+.case-studies-wrapper h2,
+.frame h2,
+.heartbeat-free-trial-wrapper h2,
+.full-service-camp-info h2,
+.run-camp-info h2,
+.campaign-strategist-info h2,
+.marketing-channels-info h2,
+.unparalleled-tracking-info h2,
+.assure-brand-info h2,
+.is-full-service-right-info h2,
+.our-guarantee-info h2,
+.good-company-wrapper h2
+
+{
+  font-size: 25px;
+}
+
+.compaigns-info h3{
+  font-size: 18px;
+}
+}
+
 @media screen and (max-width : 500px) {
-
-
 .labels{
   flex-wrap: wrap;
 }
@@ -4248,6 +4387,9 @@ display: inline-block;
 
 }
 
+
+
+
 @media screen and (max-width : 387px) {
 
 
@@ -4293,8 +4435,41 @@ display: inline-block;
 }
 
 
+/* hover effect on button */
+a,
+button{
+  transition: all 0.8s;
+}
+.home-info .button1:hover,
+.discover-info a:hover,
+.instagram-content a:hover,
+.standard a:hover,
+.full-service a:hover,
+.is-full-service-right-info-btn:hover
 
+{
+  border: 2px solid #22C6F9;
+  background-color: #FFFFFF;
+  color: #22C6F9;
+}
 
+.home-info .button2:hover,
+.contact-form button:hover,
+.small-influencers-info a:hover,
+.experience-grow-creativity-info a:hover,
+.influencer-marketing-campaigns-info-btn:hover,
+.pro a:hover,
+.full-service-camp-info-btn:hover
+{
+  border: 2px solid #FC3990;
+  background-color: #FFFFFF;
+  color: #FC3990;
+}
 
-
-
+.career-wrapper a:hover,
+.heartbeat-free-trial-wrapper a:hover
+{
+  border: 2px solid #FFFFFF;
+  background-color: #FC3990;
+  color: #FFFFFF;
+}

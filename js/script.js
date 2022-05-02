@@ -20,6 +20,7 @@ $(function(){
       if ($(this).prop('href') == window.location.href) {
           $(this).css({
             "color":"#FC3990",
+            "border-bottom":"2px solid #FC3990 "
             
           })
       }
